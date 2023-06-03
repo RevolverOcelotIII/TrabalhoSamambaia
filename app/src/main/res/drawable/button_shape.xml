@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="35dp" />
+            <solid android:color="@color/register_button_garden" />
+        </shape>
+    </item>
+</selector>

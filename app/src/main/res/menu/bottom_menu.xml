@@ -11,6 +11,11 @@
 
     <item
         android:id="@+id/subscriptions"
+        android:enabled="true"
         android:icon="@drawable/shine"
         android:title="Sugestões" />
+    <item
+        android:title=""
+    />
+
 </menu>

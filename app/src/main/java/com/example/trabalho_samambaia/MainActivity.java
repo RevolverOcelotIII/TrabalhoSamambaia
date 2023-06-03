@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
 
-    Home home = new Home();
+
 
     @Override
     protected void onStart() {
@@ -29,13 +29,5 @@ public class MainActivity extends AppCompatActivity {
         }, 2000);
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        bottomNavigationView = findViewById(R.id.bottomNavigationView);
-
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, home).commit();
-    }
 }

@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="splash_background_color">#EBECD7</color>
     <color name="garden_page_topBar">#F3EDF7</color>
+    <color name="button_add_plants">#E2DCE5</color>
+    <color name="register_button_garden">#7D8F54</color>
 </resources>
