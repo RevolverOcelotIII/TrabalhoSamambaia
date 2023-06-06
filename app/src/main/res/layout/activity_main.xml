@@ -60,8 +60,8 @@
 
     <Button
         android:id="@+id/registerButton"
-        android:layout_width="122dp"
-        android:layout_height="41dp"
+        android:layout_width="185dp"
+        android:layout_height="25dp"
         android:layout_below="@id/registerYourGarden"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
@@ -94,7 +94,6 @@
             android:backgroundTint="@color/button_add_plants"
             android:outlineSpotShadowColor="@color/button_add_plants"
             android:src="@drawable/add_icon"
-
             app:backgroundTint="@color/button_add_plants"
             app:maxImageSize="35dp" />
 

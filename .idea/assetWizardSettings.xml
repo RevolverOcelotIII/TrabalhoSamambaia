@@ -24,8 +24,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\Jack\AppData\Local\Temp\baseline_add_circle_24.xml" />
-                                                <entry key="opacityPercent" value="80" />
+                                                <entry key="imagePath" value="C:\Users\Jack\AppData\Local\Temp\baseline_key_24.xml" />
+                                                <entry key="opacityPercent" value="60" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -37,7 +37,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/add_circle/baseline_add_circle_24.xml" />
+                                                <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/key/baseline_key_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -50,7 +50,7 @@
                                               <map>
                                                 <entry key="color" value="000000" />
                                                 <entry key="imagePath" value="C:\Users\Jack\Downloads\add_plants.svg" />
-                                                <entry key="opacityPercent" value="80" />
+                                                <entry key="opacityPercent" value="60" />
                                                 <entry key="paddingPercent" value="15" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
@@ -84,10 +84,8 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="assetType" value="IMAGE" />
                                       <entry key="imageAsset" value="C:\Users\Jack\Downloads\add_plants.svg" />
-                                      <entry key="outputName" value="add_icon" />
-                                      <entry key="theme" value="CUSTOM" />
+                                      <entry key="outputName" value="password_icon" />
                                       <entry key="themeColor" value="59403f" />
                                     </map>
                                   </option>
@@ -352,8 +350,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="woman_garden" />
-                            <entry key="sourceFile" value="C:\Users\Jack\Downloads\woman_garden.svg" />
+                            <entry key="outputName" value="app_title" />
+                            <entry key="sourceFile" value="C:\Users\Jack\Downloads\app_title.svg" />
                           </map>
                         </option>
                       </PersistentState>
