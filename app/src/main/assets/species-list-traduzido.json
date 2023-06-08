@@ -1,0 +1,752 @@
+{
+  "data": [
+    {
+      "id": 18,
+      "common_name": "Bordo de Lobos de Folhas Recortadas",
+      "scientific_name": [
+        "Acer japonicum 'Aconitifolium'"
+      ],
+      "other_name": [
+        "fernleaf full moon maple"
+      ],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Full sun",
+        "part shade"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/18_acer_japonicum_aconitifolium/og/23528789198_c419363323_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/18_acer_japonicum_aconitifolium/regular/23528789198_c419363323_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/18_acer_japonicum_aconitifolium/medium/23528789198_c419363323_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/18_acer_japonicum_aconitifolium/small/23528789198_c419363323_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/18_acer_japonicum_aconitifolium/thumbnail/23528789198_c419363323_b.jpg"
+      }
+    },
+    {
+      "id": 474,
+      "common_name": "Samambaia de Folhas-de-Milenrama",
+      "scientific_name": [
+        "Achillea filipendulina"
+      ],
+      "other_name": [],
+      "cycle": "Herbaceous Perennial",
+      "watering": "Minimum",
+      "sunlight": [
+        "Full sun"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/474_achillea_filipendulina/og/50259114981_03ab5bfe29_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/474_achillea_filipendulina/regular/50259114981_03ab5bfe29_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/474_achillea_filipendulina/medium/50259114981_03ab5bfe29_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/474_achillea_filipendulina/small/50259114981_03ab5bfe29_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/474_achillea_filipendulina/thumbnail/50259114981_03ab5bfe29_b.jpg"
+      }
+    },
+    {
+      "id": 475,
+      "common_name": "Samambaia de Folhas-de-Milenrama",
+      "scientific_name": [
+        "Achillea filipendulina 'Altgold'"
+      ],
+      "other_name": [],
+      "cycle": "Herbaceous Perennial",
+      "watering": "Minimum",
+      "sunlight": [
+        "Full sun"
+      ],
+      "default_image": {
+        "license": 45,
+        "license_name": "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "original_url": "https://perenual.com/storage/species_image/475_achillea_filipendulina_altgold/og/Achillea_filipendulina_flower_281029.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/475_achillea_filipendulina_altgold/regular/Achillea_filipendulina_flower_281029.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/475_achillea_filipendulina_altgold/medium/Achillea_filipendulina_flower_281029.jpg",
+        "small_url": "https://perenual.com/storage/species_image/475_achillea_filipendulina_altgold/small/Achillea_filipendulina_flower_281029.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/475_achillea_filipendulina_altgold/thumbnail/Achillea_filipendulina_flower_281029.jpg"
+      }
+    },
+    {
+      "id": 476,
+      "common_name": "Samambaia de Folhas-de-Milenrama",
+      "scientific_name": [
+        "Achillea filipendulina 'Gold Coin Dwarf'"
+      ],
+      "other_name": [],
+      "cycle": "Herbaceous Perennial",
+      "watering": "Minimum",
+      "sunlight": [
+        "Full sun"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/476_achillea_filipendulina_gold_coin_dwarf/og/2726528020_33fe12b8be_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/476_achillea_filipendulina_gold_coin_dwarf/regular/2726528020_33fe12b8be_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/476_achillea_filipendulina_gold_coin_dwarf/medium/2726528020_33fe12b8be_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/476_achillea_filipendulina_gold_coin_dwarf/small/2726528020_33fe12b8be_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/476_achillea_filipendulina_gold_coin_dwarf/thumbnail/2726528020_33fe12b8be_b.jpg"
+      }
+    },
+    {
+      "id": 477,
+      "common_name": "Samambaia de Folhas-de-Milenrama",
+      "scientific_name": [
+        "Achillea filipendulina 'Gold Plate'"
+      ],
+      "other_name": [],
+      "cycle": "Herbaceous Perennial",
+      "watering": "Minimum",
+      "sunlight": [
+        "Full sun"
+      ],
+      "default_image": {
+        "license": 5,
+        "license_name": "Attribution-ShareAlike License",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/477_achillea_filipendulina_gold_plate/og/9216112258_9174c74775_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/477_achillea_filipendulina_gold_plate/regular/9216112258_9174c74775_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/477_achillea_filipendulina_gold_plate/medium/9216112258_9174c74775_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/477_achillea_filipendulina_gold_plate/small/9216112258_9174c74775_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/477_achillea_filipendulina_gold_plate/thumbnail/9216112258_9174c74775_b.jpg"
+      }
+    },
+    {
+      "id": 478,
+      "common_name": "Samambaia de Folhas-de-Milenrama",
+      "scientific_name": [
+        "Achillea filipendulina 'Parker's Variety'"
+      ],
+      "other_name": [],
+      "cycle": "Herbaceous Perennial",
+      "watering": "Minimum",
+      "sunlight": [
+        "Full sun"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/478_achillea_filipendulina_parkers_variety/og/49688851782_d2a195b73b_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/478_achillea_filipendulina_parkers_variety/regular/49688851782_d2a195b73b_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/478_achillea_filipendulina_parkers_variety/medium/49688851782_d2a195b73b_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/478_achillea_filipendulina_parkers_variety/small/49688851782_d2a195b73b_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/478_achillea_filipendulina_parkers_variety/thumbnail/49688851782_d2a195b73b_b.jpg"
+      }
+    },
+    {
+      "id": 543,
+      "common_name": "Samambaia de Cabelo de Nossa Senhora",
+      "scientific_name": [
+        "Adiantum capillus-veneris"
+      ],
+      "other_name": [
+        "Southern Maidenhair",
+        "Venus' Hair Fern",
+        "Venus' Hair Fern"
+      ],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "part shade",
+        "part sun/part shade"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/543_adiantum_capillus-veneris/og/49636882698_cb4fa4c685_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/543_adiantum_capillus-veneris/regular/49636882698_cb4fa4c685_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/543_adiantum_capillus-veneris/medium/49636882698_cb4fa4c685_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/543_adiantum_capillus-veneris/small/49636882698_cb4fa4c685_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/543_adiantum_capillus-veneris/thumbnail/49636882698_cb4fa4c685_b.jpg"
+      }
+    },
+    {
+      "id": 544,
+      "common_name": "Samambaia de Cabelo Áspero",
+      "scientific_name": [
+        "Adiantum hispidulum"
+      ],
+      "other_name": [],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Part shade",
+        "full shade"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/544_adiantum_hispidulum/og/50608477431_5f3bb0a767_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/544_adiantum_hispidulum/regular/50608477431_5f3bb0a767_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/544_adiantum_hispidulum/medium/50608477431_5f3bb0a767_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/544_adiantum_hispidulum/small/50608477431_5f3bb0a767_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/544_adiantum_hispidulum/thumbnail/50608477431_5f3bb0a767_b.jpg"
+      }
+    },
+    {
+      "id": 545,
+      "common_name": "Samambaia de Cabelo do Norte",
+      "scientific_name": [
+        "Adiantum pedatum"
+      ],
+      "other_name": [
+        "Maidenhair Fern"
+      ],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Partial Shade",
+        " Shade"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/545_adiantum_pedatum/og/51419830961_2a163c78cb_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/545_adiantum_pedatum/regular/51419830961_2a163c78cb_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/545_adiantum_pedatum/medium/51419830961_2a163c78cb_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/545_adiantum_pedatum/small/51419830961_2a163c78cb_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/545_adiantum_pedatum/thumbnail/51419830961_2a163c78cb_b.jpg"
+      }
+    },
+    {
+      "id": 546,
+      "common_name": "Samambaia de Cabelo do Delta",
+      "scientific_name": [
+        "Adiantum raddianum"
+      ],
+      "other_name": [],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "part shade"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/546_adiantum_raddianum/og/48134564587_c4562175cb_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/546_adiantum_raddianum/regular/48134564587_c4562175cb_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/546_adiantum_raddianum/medium/48134564587_c4562175cb_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/546_adiantum_raddianum/small/48134564587_c4562175cb_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/546_adiantum_raddianum/thumbnail/48134564587_c4562175cb_b.jpg"
+      }
+    },
+    {
+      "id": 570,
+      "common_name": "Pinheiro-Samambaia Africano",
+      "scientific_name": [
+        "Afrocarpus gracilior"
+      ],
+      "other_name": [],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Full sun"
+      ],
+      "default_image": {
+        "license": 45,
+        "license_name": "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+        "original_url": "https://perenual.com/storage/species_image/570_afrocarpus_gracilior/og/Starr_061224-2850_Afrocarpus_gracilior.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/570_afrocarpus_gracilior/regular/Starr_061224-2850_Afrocarpus_gracilior.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/570_afrocarpus_gracilior/medium/Starr_061224-2850_Afrocarpus_gracilior.jpg",
+        "small_url": "https://perenual.com/storage/species_image/570_afrocarpus_gracilior/small/Starr_061224-2850_Afrocarpus_gracilior.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/570_afrocarpus_gracilior/thumbnail/Starr_061224-2850_Afrocarpus_gracilior.jpg"
+      }
+    },
+    {
+      "id": 1024,
+      "common_name": "Samambaia Asparagus",
+      "scientific_name": [
+        "Asparagus densiflorus 'Myersii'"
+      ],
+      "other_name": [],
+      "cycle": "Herbaceous Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "part shade"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/1024_asparagus_densiflorus_myersii/og/24611964210_ce3afbb0e8_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/1024_asparagus_densiflorus_myersii/regular/24611964210_ce3afbb0e8_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/1024_asparagus_densiflorus_myersii/medium/24611964210_ce3afbb0e8_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/1024_asparagus_densiflorus_myersii/small/24611964210_ce3afbb0e8_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/1024_asparagus_densiflorus_myersii/thumbnail/24611964210_ce3afbb0e8_b.jpg"
+      }
+    },
+    {
+      "id": 1025,
+      "common_name": "Samambaia Asparagus",
+      "scientific_name": [
+        "Asparagus densiflorus 'Sprengeri'"
+      ],
+      "other_name": [],
+      "cycle": "Herbaceous Perennial",
+      "watering": "Minimum",
+      "sunlight": [
+        "part shade"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/1025_asparagus_densiflorus_sprengeri/og/24818361201_11881d4f76_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/1025_asparagus_densiflorus_sprengeri/regular/24818361201_11881d4f76_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/1025_asparagus_densiflorus_sprengeri/medium/24818361201_11881d4f76_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/1025_asparagus_densiflorus_sprengeri/small/24818361201_11881d4f76_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/1025_asparagus_densiflorus_sprengeri/thumbnail/24818361201_11881d4f76_b.jpg"
+      }
+    },
+    {
+      "id": 1030,
+      "common_name": "Samambaia Ming",
+      "scientific_name": [
+        "Asparagus retrofractus"
+      ],
+      "other_name": [
+        "pom pom asparagus fern"
+      ],
+      "cycle": "Herbaceous Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Full sun",
+        "part shade"
+      ],
+      "default_image": {
+        "license": 5,
+        "license_name": "Attribution-ShareAlike License",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/og/49255769768_df55596553_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/regular/49255769768_df55596553_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/medium/49255769768_df55596553_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/small/49255769768_df55596553_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/thumbnail/49255769768_df55596553_b.jpg"
+      }
+    },
+    {
+      "id": 1031,
+      "common_name": "Samambaia Asparagus",
+      "scientific_name": [
+        "Asparagus setaceus"
+      ],
+      "other_name": [],
+      "cycle": "Perennial",
+      "watering": "Frequent",
+      "sunlight": [
+        "part shade"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/1031_asparagus_setaceus/og/24274026853_98d1a2733a_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/1031_asparagus_setaceus/regular/24274026853_98d1a2733a_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/1031_asparagus_setaceus/medium/24274026853_98d1a2733a_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/1031_asparagus_setaceus/small/24274026853_98d1a2733a_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/1031_asparagus_setaceus/thumbnail/24274026853_98d1a2733a_b.jpg"
+      }
+    },
+    {
+      "id": 1023,
+      "common_name": "Samambaia Asparagus de Sprenger",
+      "scientific_name": [
+        "Asparagus densiflorus"
+      ],
+      "other_name": [],
+      "cycle": "Herbaceous Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "part shade"
+      ],
+      "default_image": {
+        "license": 5,
+        "license_name": "Attribution-ShareAlike License",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/1023_asparagus_densiflorus/og/49289066276_4bbe4e5b94_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/1023_asparagus_densiflorus/regular/49289066276_4bbe4e5b94_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/1023_asparagus_densiflorus/medium/49289066276_4bbe4e5b94_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/1023_asparagus_densiflorus/small/49289066276_4bbe4e5b94_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/1023_asparagus_densiflorus/thumbnail/49289066276_4bbe4e5b94_b.jpg"
+      }
+    },
+    {
+      "id": 1038,
+      "common_name": "Samambaia Ninho de Pássaro",
+      "scientific_name": [
+        "Asplenium nidus 'Antiquum'"
+      ],
+      "other_name": [],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "full sun",
+        "part shade",
+        "full shade"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/1038_asplenium_nidus_antiquum/og/29457334967_82a2d8789c_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/1038_asplenium_nidus_antiquum/regular/29457334967_82a2d8789c_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/1038_asplenium_nidus_antiquum/medium/29457334967_82a2d8789c_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/1038_asplenium_nidus_antiquum/small/29457334967_82a2d8789c_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/1038_asplenium_nidus_antiquum/thumbnail/29457334967_82a2d8789c_b.jpg"
+      }
+    },
+    {
+      "id": 1040,
+      "common_name": "Samambaia Língua de Cervo",
+      "scientific_name": [
+        "Asplenium scolopendrium"
+      ],
+      "other_name": [],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Deep shade",
+        " Filtered shade",
+        " Full sun",
+        " Part sun/part shade"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/og/35131361740_d7dc5930c1_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/regular/35131361740_d7dc5930c1_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/medium/35131361740_d7dc5930c1_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/small/35131361740_d7dc5930c1_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/thumbnail/35131361740_d7dc5930c1_b.jpg"
+      }
+    },
+    {
+      "id": 1041,
+      "common_name": "Samambaia Língua de Cervo",
+      "scientific_name": [
+        "Asplenium scolopendrium (Crispum Group)"
+      ],
+      "other_name": [],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Deep shade",
+        " Filtered shade",
+        " Full sun",
+        " Part sun/part shade"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/og/51173252594_82e874318c_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/regular/51173252594_82e874318c_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/medium/51173252594_82e874318c_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/small/51173252594_82e874318c_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/thumbnail/51173252594_82e874318c_b.jpg"
+      }
+    },
+    {
+      "id": 1042,
+      "common_name": "Samambaia Língua de Cervo",
+      "scientific_name": [
+        "Asplenium scolopendrium (Undulatum Group)"
+      ],
+      "other_name": [],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Deep shade",
+        " Filtered shade",
+        " Full sun",
+        " Part sun/part shade"
+      ],
+      "default_image": {
+        "license": 4,
+        "license_name": "Attribution License",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/og/51173252594_82e874318c_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/regular/51173252594_82e874318c_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/medium/51173252594_82e874318c_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/small/51173252594_82e874318c_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/1042_asplenium_scolopendrium_undulatum_group/thumbnail/51173252594_82e874318c_b.jpg"
+      }
+    },
+    {
+      "id": 1113,
+      "common_name": "Samambaia Lady do Sul",
+      "scientific_name": [
+        "Athyrium asplenioides"
+      ],
+      "other_name": [],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Part shade",
+        "full shade"
+      ],
+      "default_image": {
+        "license": 5,
+        "license_name": "Attribution-ShareAlike License",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/og/49255769768_df55596553_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/regular/49255769768_df55596553_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/medium/49255769768_df55596553_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/small/49255769768_df55596553_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/thumbnail/49255769768_df55596553_b.jpg"
+      }
+    },
+    {
+      "id": 1114,
+      "common_name": "Samambaia Pintada Japonesa",
+      "scientific_name": [
+        "Athyrium 'Branford Rambler'"
+      ],
+      "other_name": [],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Part shade",
+        "full shade"
+      ],
+      "default_image": {
+        "license": 5,
+        "license_name": "Attribution-ShareAlike License",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/og/49255769768_df55596553_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/regular/49255769768_df55596553_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/medium/49255769768_df55596553_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/small/49255769768_df55596553_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/thumbnail/49255769768_df55596553_b.jpg"
+      }
+    },
+    {
+      "id": 1115,
+      "common_name": "Samambaia Lady",
+      "scientific_name": [
+        "Athyrium filix-femina"
+      ],
+      "other_name": [
+        "Ladyfern"
+      ],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Partial Shade",
+        " Shade"
+      ],
+      "default_image": {
+        "license": 5,
+        "license_name": "Attribution-ShareAlike License",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/og/49255769768_df55596553_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/regular/49255769768_df55596553_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/medium/49255769768_df55596553_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/small/49255769768_df55596553_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/thumbnail/49255769768_df55596553_b.jpg"
+      }
+    },
+    {
+      "id": 1116,
+      "common_name": "Samambaia Lady",
+      "scientific_name": [
+        "Athyrium filix-femina 'Cruciato-cristatum'"
+      ],
+      "other_name": [
+        "Ladyfern"
+      ],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Partial Shade",
+        " Shade"
+      ],
+      "default_image": {
+        "license": 5,
+        "license_name": "Attribution-ShareAlike License",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/og/49255769768_df55596553_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/regular/49255769768_df55596553_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/medium/49255769768_df55596553_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/small/49255769768_df55596553_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/thumbnail/49255769768_df55596553_b.jpg"
+      }
+    },
+    {
+      "id": 1117,
+      "common_name": "Samambaia Lady",
+      "scientific_name": [
+        "Athyrium filix-femina 'Dre's Dagger'"
+      ],
+      "other_name": [
+        "Ladyfern"
+      ],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Partial Shade",
+        " Shade"
+      ],
+      "default_image": {
+        "license": 5,
+        "license_name": "Attribution-ShareAlike License",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/1121_athyrium_filix-femina_minutissimum/og/52345779831_2ee17d3997_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/1121_athyrium_filix-femina_minutissimum/regular/52345779831_2ee17d3997_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/1121_athyrium_filix-femina_minutissimum/medium/52345779831_2ee17d3997_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/1121_athyrium_filix-femina_minutissimum/small/52345779831_2ee17d3997_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/1121_athyrium_filix-femina_minutissimum/thumbnail/52345779831_2ee17d3997_b.jpg"
+      }
+    },
+    {
+      "id": 1118,
+      "common_name": "Samambaia Lady",
+      "scientific_name": [
+        "Athyrium filix-femina 'Encourage'"
+      ],
+      "other_name": [
+        "Ladyfern"
+      ],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Partial Shade",
+        " Shade"
+      ],
+      "default_image": {
+        "license": 5,
+        "license_name": "Attribution-ShareAlike License",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/og/49255769768_df55596553_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/regular/49255769768_df55596553_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/medium/49255769768_df55596553_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/small/49255769768_df55596553_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/thumbnail/49255769768_df55596553_b.jpg"
+      }
+    },
+    {
+      "id": 1119,
+      "common_name": "Samambaia Lady",
+      "scientific_name": [
+        "Athyrium filix-femina 'Fancy Fronds'"
+      ],
+      "other_name": [
+        "Ladyfern"
+      ],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Partial Shade",
+        " Shade"
+      ],
+      "default_image": {
+        "license": 5,
+        "license_name": "Attribution-ShareAlike License",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/og/49255769768_df55596553_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/regular/49255769768_df55596553_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/medium/49255769768_df55596553_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/small/49255769768_df55596553_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/thumbnail/49255769768_df55596553_b.jpg"
+      }
+    },
+    {
+      "id": 1120,
+      "common_name": "Samambaia Tatting",
+      "scientific_name": [
+        "Athyrium filix-femina 'Frizelliae'"
+      ],
+      "other_name": [
+        "Ladyfern"
+      ],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Partial Shade",
+        " Shade"
+      ],
+      "default_image": {
+        "license": 5,
+        "license_name": "Attribution-ShareAlike License",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/og/49255769768_df55596553_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/regular/49255769768_df55596553_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/medium/49255769768_df55596553_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/small/49255769768_df55596553_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/thumbnail/49255769768_df55596553_b.jpg"
+      }
+    },
+    {
+      "id": 1121,
+      "common_name": "Samambaia Lady",
+      "scientific_name": [
+        "Athyrium filix-femina 'Minutissimum'"
+      ],
+      "other_name": [
+        "Ladyfern"
+      ],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Partial Shade",
+        " Shade"
+      ],
+      "default_image": {
+        "license": 5,
+        "license_name": "Attribution-ShareAlike License",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/1121_athyrium_filix-femina_minutissimum/og/52345779831_2ee17d3997_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/1121_athyrium_filix-femina_minutissimum/regular/52345779831_2ee17d3997_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/1121_athyrium_filix-femina_minutissimum/medium/52345779831_2ee17d3997_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/1121_athyrium_filix-femina_minutissimum/small/52345779831_2ee17d3997_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/1121_athyrium_filix-femina_minutissimum/thumbnail/52345779831_2ee17d3997_b.jpg"
+      }
+    },
+    {
+      "id": 1122,
+      "common_name": "Samambaia Lady",
+      "scientific_name": [
+        "Athyrium filix-femina 'Rotstiel'"
+      ],
+      "other_name": [
+        "Ladyfern"
+      ],
+      "cycle": "Perennial",
+      "watering": "Average",
+      "sunlight": [
+        "Partial Shade",
+        " Shade"
+      ],
+      "default_image": {
+        "license": 5,
+        "license_name": "Attribution-ShareAlike License",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "original_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/og/49255769768_df55596553_b.jpg",
+        "regular_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/regular/49255769768_df55596553_b.jpg",
+        "medium_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/medium/49255769768_df55596553_b.jpg",
+        "small_url": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/small/49255769768_df55596553_b.jpg",
+        "thumbnail": "https://perenual.com/storage/species_image/2_abies_alba_pyramidalis/thumbnail/49255769768_df55596553_b.jpg"
+      }
+    }
+  ],
+  "to": 30,
+  "per_page": 30,
+  "current_page": 1,
+  "from": 1,
+  "last_page": 6,
+  "total": 153
+}
