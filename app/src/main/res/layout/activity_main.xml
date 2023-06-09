@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
+    android:id="@+id/activity_main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     android:theme="@android:style/Theme.NoTitleBar"
-    tools:context=".MainActivity">
+    tools:context=".HomePage">
+
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/topBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/garden_page_topBar">
+        android:layout_height="0dp"
+        android:background="@color/garden_page_topBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/appName"
@@ -28,61 +33,33 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <ImageView
-        android:id="@+id/woman_garden"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:src="@drawable/woman_garden" />
-
-    <TextView
-        android:id="@+id/emptyGardenText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/woman_garden"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
-        android:text="@string/emptyGardenText"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/registerYourGarden"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/emptyGardenText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:lineSpacingExtra="4sp"
-        android:text="@string/registerYourGarden"
-        android:textColor="#D9000000" />
-
-    <Button
-        android:id="@+id/registerButton"
-        android:layout_width="185dp"
-        android:layout_height="25dp"
-        android:layout_below="@id/registerYourGarden"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/button_shape"
-        android:text="Cadastrar"
-        android:textColor="@color/white"
-        android:theme="@android:style/Theme.NoTitleBar"
-
-        app:toggleCheckedStateOnClick="false" />
-
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="@id/bottomNavigationView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintVertical_bias="1.0"
+        app:navGraph="@navigation/nav_graph"
+        tools:layout="@layout/activity_main" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_height="0dp"
         android:background="@color/garden_page_topBar"
         app:itemIconTint="#59403F"
 
         app:itemTextColor="#59403F"
         app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_menu">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -92,6 +69,7 @@
             android:layout_gravity="bottom|end"
             android:layout_marginRight="10dp"
             android:backgroundTint="@color/button_add_plants"
+            android:contentDescription="new plant button"
             android:outlineSpotShadowColor="@color/button_add_plants"
             android:src="@drawable/add_icon"
             app:backgroundTint="@color/button_add_plants"
@@ -100,4 +78,4 @@
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

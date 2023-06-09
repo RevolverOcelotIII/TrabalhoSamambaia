@@ -15,6 +15,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.menu.MenuPopupHelper;
+import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -31,7 +35,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
-        new Handler().postDelayed(() -> showHomeScreen(), 2000);
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(this, HomePage.class);
+            startActivity(intent);
+        }, 2000);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.Q)
@@ -43,20 +50,26 @@ public class MainActivity extends AppCompatActivity {
         addPlantsButton.setOnClickListener(v -> showPopupMenu());
 
         // Configurar o BottomNavigationView
+        NavHostFragment navFrag = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_container);
+        NavController navController = navFrag.getNavController();
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        bottomNavigationView.setOnItemSelectedListener((NavigationBarView.OnItemSelectedListener) this);
+        NavigationUI.setupWithNavController(bottomNavigationView, navController);
+        //bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        //bottomNavigationView.setOnItemSelectedListener((NavigationBarView.OnItemSelectedListener) this);
+
+
 
         // Configurar o botão de cadastro
-        Button registerButton = findViewById(R.id.registerButton);
-        registerButton.setOnClickListener(v -> {
-            if (isUserLoggedIn()) {
-                markUserAsLoggedIn();
-            } else {
-                // O usuário não está logado, redirecionar para a página de cadastro
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
+//        Button registerButton = findViewById(R.id.registerButton);
+//        registerButton.setOnClickListener(v -> {
+//            if (isUserLoggedIn()) {
+//                markUserAsLoggedIn();
+//            } else {
+//                // O usuário não está logado, redirecionar para a página de cadastro
+//                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 
     @RequiresApi(api = Build.VERSION_CODES.Q)
