@@ -20,4 +20,7 @@
     <style name="Theme.TrabalhoSamambaia.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.TrabalhoSamambaia.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="GardenActivityStyle" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
 </resources>
