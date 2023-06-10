@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/alert_list"
-    app:startDestination="@id/home">
+    app:startDestination="@id/alert">
 
     <fragment
-        android:id="@+id/home"
+        android:id="@+id/alert"
         android:name="com.example.trabalho_samambaia.AlertitemFragment"
         android:label="fragment_item_list"
         tools:layout="@layout/fragment_item_list" />

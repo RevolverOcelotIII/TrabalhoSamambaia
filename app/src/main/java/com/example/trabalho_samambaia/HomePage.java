@@ -35,7 +35,7 @@ public class HomePage extends AppCompatActivity {
         // Configurar o BottomNavigationView
         NavHostFragment navFrag = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_container);
         NavController navController = navFrag.getNavController();
-        navBottom = findViewById(R.id.bottomNavigationView);
+        navBottom = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
         NavigationUI.setupWithNavController(navBottom, navController);
 
 

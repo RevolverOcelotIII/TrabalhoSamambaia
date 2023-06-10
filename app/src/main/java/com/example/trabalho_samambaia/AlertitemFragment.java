@@ -15,23 +15,21 @@ import android.view.ViewGroup;
 import com.example.trabalho_samambaia.placeholder.PlaceholderContent;
 
 /**
- * A fragment representing a list of Items.
+ * Classe para renderizar recycler view dos alertas
+ *
  */
 public class AlertitemFragment extends Fragment {
 
-    // TODO: Customize parameter argument names
+
     private static final String ARG_COLUMN_COUNT = "column-count";
-    // TODO: Customize parameters
+
     private int mColumnCount = 1;
 
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
+
     public AlertitemFragment() {
     }
 
-    // TODO: Customize parameter initialization
+
     @SuppressWarnings("unused")
     public static AlertitemFragment newInstance(int columnCount) {
         AlertitemFragment fragment = new AlertitemFragment();

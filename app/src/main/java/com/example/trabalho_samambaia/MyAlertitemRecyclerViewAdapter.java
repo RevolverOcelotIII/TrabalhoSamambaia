@@ -3,7 +3,6 @@ package com.example.trabalho_samambaia;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -13,8 +12,7 @@ import com.example.trabalho_samambaia.databinding.FragmentItemBinding;
 import java.util.List;
 
 /**
- * {@link RecyclerView.Adapter} that can display a {@link PlaceholderItem}.
- * TODO: Replace the implementation with code for your data type.
+ * Esta classe faz a parte visual do item da recycler view e trata dos dados
  */
 public class MyAlertitemRecyclerViewAdapter extends RecyclerView.Adapter<MyAlertitemRecyclerViewAdapter.ViewHolder> {
 

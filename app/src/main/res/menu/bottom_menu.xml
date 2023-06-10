@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
+        android:id="@+id/alert_list"
         android:icon="@drawable/bell"
-        android:title="Alertas" />
+        android:title="@string/alertas" />
     <item
-        android:id="@+id/shorts"
+        android:id="@+id/home_garden"
         android:icon="@drawable/leaf"
-        android:title="Jardim" />
+        android:title="@string/jardim" />
 
     <item
-        android:id="@+id/subscriptions"
+        android:id="@+id/sugestions"
         android:enabled="true"
         android:icon="@drawable/shine"
-        android:title="Sugestões" />
+        android:title="@string/sugestao" />
     <item
         android:title=""
     />
