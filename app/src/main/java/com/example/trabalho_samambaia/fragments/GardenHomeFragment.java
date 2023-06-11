@@ -1,35 +1,38 @@
 package com.example.trabalho_samambaia.fragments;
 
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
-
-import androidx.annotation.RequiresApi;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.PopupMenu;
 
+import androidx.annotation.RequiresApi;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.example.trabalho_samambaia.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class GardenHomeFragment extends Fragment {
 
-    FloatingActionButton addPlantsButton;
+    private FloatingActionButton addPlantsButton;
+    private BottomNavigationView navBottom;
 
     public GardenHomeFragment() {
         // Required empty public constructor
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.Q)
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
-
-    @RequiresApi(api = Build.VERSION_CODES.Q)
+    @SuppressLint("NewApi")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -38,6 +41,16 @@ public class GardenHomeFragment extends Fragment {
         addPlantsButton = view.findViewById(R.id.add_plants);
         addPlantsButton.setOnClickListener(v -> showPopupMenu());
 
+        navBottom = view.findViewById(R.id.bottomNavigationView);
+        navBottom.setOnItemSelectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.alert:
+                    openAlertItemFragment();
+                    return true;
+                default:
+                    return false;
+            }
+        });
         return view;
     }
 
@@ -62,4 +75,25 @@ public class GardenHomeFragment extends Fragment {
 
         popupMenu.show();
     }
+
+    private void openAlertItemFragment() {
+        // Cria uma instância do AlertitemFragment
+        AlertitemFragment alertitemFragment = AlertitemFragment.newInstance(1);
+
+        // Obtém o FragmentManager do AppCompatActivity
+        FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+
+        // Inicia a transação do FragmentManager
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+
+        // Substitui o fragmento atual pelo AlertitemFragment
+        transaction.replace(R.id.container, alertitemFragment);
+
+        // Adiciona a transação à pilha de volta (para permitir voltar ao fragmento anterior)
+        transaction.addToBackStack(null);
+
+        // Executa a transação
+        transaction.commit();
+    }
+
 }
