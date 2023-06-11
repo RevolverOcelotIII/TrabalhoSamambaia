@@ -1,16 +1,15 @@
 package com.example.trabalho_samambaia.activities;
 
+import android.os.Bundle;
+import android.view.MenuItem;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.os.Bundle;
-import android.view.MenuItem;
-
-import com.example.trabalho_samambaia.fragments.CadastroPlantaBaseFragment;
-import com.example.trabalho_samambaia.fragments.CadastroPlantaFragment;
 import com.example.trabalho_samambaia.R;
+import com.example.trabalho_samambaia.fragments.CadastroPlantaBaseFragment;
 
 public class CadastroPlantaActivity extends AppCompatActivity {
 
