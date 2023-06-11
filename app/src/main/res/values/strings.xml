@@ -8,4 +8,12 @@
     <string name="alertas">Alertas</string>
     <string name="jardim">Jardim</string>
     <string name="sugestao">Sugestões</string>
+    <string name="title_activity_visualizacao_planta">VisualizacaoPlanta</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
 </resources>

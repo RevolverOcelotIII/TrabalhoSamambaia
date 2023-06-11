@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.splash_screen);
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(this, HomePage.class);
+            //Intent intent = new Intent(this, HomePage.class);
+            Intent intent = new Intent(this, PlantViewer.class);
             startActivity(intent);
         }, 2000);
     }
