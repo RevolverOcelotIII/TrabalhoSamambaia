@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Sua planta"
-        android:textSize="16sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,21 +23,25 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:textSize="16sp"
+        android:textStyle="italic"
         android:text="Samambaia (Samambaia)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sua_planta" />
 
     <ImageView
         android:id="@+id/planta_imageView"
-        android:layout_width="350dp"
+        android:layout_width="360dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:alpha="0.5"
+        android:alpha="0.8"
         android:src="@drawable/plantplaceholder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tipo_planta" />
+        app:layout_constraintTop_toBottomOf="@+id/tipo_planta"
+        android:scaleType="centerCrop"
+
+        />
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -74,7 +79,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/cadastro_planta_regagem_editText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="date"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
