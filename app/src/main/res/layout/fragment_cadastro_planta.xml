@@ -60,7 +60,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/cadastro_planta_nome_editText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -79,23 +79,26 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/cadastro_planta_regagem_editText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="date"/>
+            android:layout_height="match_parent"
+            android:inputType="date" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/editaddcapbtn"
-        android:layout_width="wrap_content"
+        android:id="@+id/create_plant_button"
+        android:layout_width="179dp"
         android:layout_height="wrap_content"
-        android:background="@color/black"
+        android:background="@drawable/button_shape"
         android:elevation="10dp"
         android:text="Cadastrar Planta"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="18sp"
+        android:theme="@android:style/Theme.NoTitleBar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cadastro_planta_regagem_label" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 package com.example.trabalho_samambaia.fragments;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,6 +15,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.trabalho_samambaia.R;
+import com.example.trabalho_samambaia.activities.CadastroPlantaActivity;
+import com.example.trabalho_samambaia.activities.GardenActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -63,7 +66,9 @@ public class GardenHomeFragment extends Fragment {
         popupMenu.setOnMenuItemClickListener(item -> {
             switch (item.getItemId()) {
                 case R.id.menu_manual:
-                    // Ação para a opção "Manual"
+                    Intent intent = new Intent(getActivity(), CadastroPlantaActivity.class);
+                    intent.putExtra("register_type",1);
+                    startActivity(intent);
                     return true;
                 case R.id.menu_identify:
                     // Ação para a opção "Identificar"
