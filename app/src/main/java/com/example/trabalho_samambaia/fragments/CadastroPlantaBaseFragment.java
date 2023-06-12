@@ -46,38 +46,7 @@ public class CadastroPlantaBaseFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public List<Planta> gerarListaPlaceholder() {
-        List<Planta> plantas = new ArrayList<Planta>();
-        AssetManager assetManager = this.getContext().getAssets();
 
-
-        try {
-            InputStream inputStream = assetManager.open("species-list-traduzido.json");
-            int json_tamanho = inputStream.available();
-            byte[] buffer = new byte[json_tamanho];
-            inputStream.read(buffer);
-            inputStream.close();
-
-            String json = new String(buffer, "UTF-8");
-            Log.d("testes", json);
-
-            Gson gson = new Gson();
-            JsonArray jsonArray = gson.fromJson(json, JsonObject.class).getAsJsonArray("data");
-            for (JsonElement element : jsonArray) {
-                JsonObject planta_json = element.getAsJsonObject();
-                Planta planta = new Planta(planta_json.get("common_name").getAsString(),
-                        planta_json.get("scientific_name").getAsJsonArray().get(0).getAsString(),
-                        planta_json.getAsJsonObject("default_image").get("small_url").getAsString());
-                Log.d("testes", planta.toString());
-                plantas.add(planta);
-            }
-            // String smallUrl = jsonObject.getAsJsonObject("default_image").get("small_url").getAsString();
-
-        } catch (IOException e) {
-            Log.d("testes", "deu ruim" + e.toString());
-        }
-        return plantas;
-    }
 
     public static CadastroPlantaBaseFragment newInstance(String param1, String param2) {
         CadastroPlantaBaseFragment fragment = new CadastroPlantaBaseFragment();
@@ -89,7 +58,7 @@ public class CadastroPlantaBaseFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        lista_plantas = gerarListaPlaceholder();
+        lista_plantas = Planta.gerarListaPlaceholder(this.getContext());
     }
 
     @Override
