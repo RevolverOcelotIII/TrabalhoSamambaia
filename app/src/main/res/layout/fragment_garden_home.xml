@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context=".fragments.GardenHomeFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:theme="@android:style/Theme.NoTitleBar"
+        tools:context=".activities.GardenActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/garden_page_topBar">
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/garden_page"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/woman_garden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/woman_garden" />
+
+        <TextView
+            android:id="@+id/emptyGardenText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/woman_garden"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="@string/emptyGardenText"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/registerYourGarden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyGardenText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/registerYourGarden"
+            android:textColor="#D9000000" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="179dp"
+            android:layout_height="38dp"
+            android:layout_below="@id/registerYourGarden"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_shape"
+            android:text="Cadastrar"
+            android:textColor="@color/white"
+            android:theme="@android:style/Theme.NoTitleBar"
+
+            app:toggleCheckedStateOnClick="false" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/garden_page_topBar"
+            app:itemIconTint="#59403F"
+
+            app:itemTextColor="#59403F"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_plants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/button_add_plants"
+                android:outlineSpotShadowColor="@color/button_add_plants"
+                android:src="@drawable/add_icon"
+                app:backgroundTint="@color/button_add_plants"
+                app:maxImageSize="35dp" />
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </RelativeLayout>
+
+</FrameLayout>

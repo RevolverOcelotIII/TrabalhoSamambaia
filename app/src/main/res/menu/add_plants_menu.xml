@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_manual"
+        android:title="Manual"
+        android:icon="@drawable/leaf" />
+    <item
+        android:id="@+id/menu_identify"
+        android:title="Identificar"
+        android:icon="@drawable/bell" />
+</menu>

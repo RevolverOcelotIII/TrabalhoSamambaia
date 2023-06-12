@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
 
     <style name="Theme.TrabalhoSamambaia" parent="Theme.MaterialComponents.Light.NoActionBar">
@@ -20,4 +20,12 @@
     <style name="Theme.TrabalhoSamambaia.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.TrabalhoSamambaia.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.GardenActivityStyle" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="Theme.splash_screen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/register_button_garden</item>
+        <item name="android:background">@color/register_button_garden</item>
+    </style>
 </resources>
