@@ -1,6 +1,10 @@
 <resources>
+
     <string name="app_name">Samambaia</string>
     <string name="garden_page">Seu Jardim</string>
+
+    <string name="cadastro_planta">Cadastrando Planta</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
