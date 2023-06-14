@@ -16,24 +16,23 @@ import java.util.List;
 
 public class Planta {
     private int id;
-    private String nome;
+    private String nome_comum;
     private String nome_cientifico;
     private String imagem_url;
-
-    private String quantidade_agua;
+    private String nome_personalizado;
+    private String ciclo;
+    private String regagem;
+    private String banho_sol;
+    private Usuario usuario;
+    private int planta_base_id;
 
     public Planta(String nome, String nome_cientifico, String imagem_url) {
-        this.nome = nome;
+        this.nome_comum = nome;
         this.nome_cientifico = nome_cientifico;
         this.imagem_url = imagem_url;
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
+    public Planta() {
     }
 
     public String getNome_cientifico() {
@@ -52,12 +51,12 @@ public class Planta {
         this.imagem_url = imagem_url;
     }
 
-    public String getQuantidade_agua() {
-        return quantidade_agua;
+    public String getRegagem() {
+        return regagem;
     }
 
-    public void setQuantidade_agua(String quantidade_agua) {
-        this.quantidade_agua = quantidade_agua;
+    public void setRegagem(String regagem) {
+        this.regagem = regagem;
     }
 
     public int getId() {
@@ -66,6 +65,54 @@ public class Planta {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getNome_comum() {
+        return nome_comum;
+    }
+
+    public void setNome_comum(String nome_comum) {
+        this.nome_comum = nome_comum;
+    }
+
+    public String getNome_personalizado() {
+        return nome_personalizado;
+    }
+
+    public void setNome_personalizado(String nome_personalizado) {
+        this.nome_personalizado = nome_personalizado;
+    }
+
+    public String getCiclo() {
+        return ciclo;
+    }
+
+    public void setCiclo(String ciclo) {
+        this.ciclo = ciclo;
+    }
+
+    public String getBanho_sol() {
+        return banho_sol;
+    }
+
+    public void setBanho_sol(String banho_sol) {
+        this.banho_sol = banho_sol;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public int getPlanta_base_id() {
+        return planta_base_id;
+    }
+
+    public void setPlanta_base_id(int planta_base_id) {
+        this.planta_base_id = planta_base_id;
     }
 
     public static List<Planta> gerarListaPlaceholder(Context context) {
@@ -107,7 +154,7 @@ public class Planta {
     @Override
     public String toString() {
         return "Planta{" +
-                "nome='" + nome + '\'' +
+                "nome='" + nome_comum + '\'' +
                 ", nome_cientifico='" + nome_cientifico + '\'' +
                 ", imagem_url='" + imagem_url + '\'' +
                 '}';
