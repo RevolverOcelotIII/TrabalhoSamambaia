@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/edit_button"
+        android:icon="@mipmap/ic_edit_circle_round"
+
+        android:title="edit"
+        android:onClick="editButtonClick"
+        app:showAsAction="never|ifRoom" />
+</menu>

@@ -1,24 +1,28 @@
 package com.example.trabalho_samambaia;
 
-import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.View;
 
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 
-import androidx.navigation.ui.NavigationUI;
 
 import com.example.trabalho_samambaia.databinding.ActivityVisualizacaoPlantaBinding;
+import com.google.android.material.tabs.TabLayout;
 
 public class PlantViewer extends AppCompatActivity {
 
 
     private ActivityVisualizacaoPlantaBinding binding;
+    private TabLayout tab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,23 +31,71 @@ public class PlantViewer extends AppCompatActivity {
         binding = ActivityVisualizacaoPlantaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.toolbar);
+        Toolbar materialToolbar = findViewById(R.id.materialToolbar);
+        materialToolbar.setSubtitle("Tracheophyta");
+        setSupportActionBar(materialToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        tab = findViewById(R.id.tab);
+        tab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
 
 
-
-        binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAnchorView(R.id.fab)
-                        .setAction("Action", null).show();
+            public void onTabSelected(TabLayout.Tab tab) {
+                int position = tab.getPosition();
+                Fragment fragment = null;
+
+                switch (position) {
+                    case 0:
+                        fragment = new GeneralTab();
+                        break;
+                    case 1:
+                        fragment = new CareTab();
+                        break;
+                }
+
+                if (fragment != null) {
+                    // Replace the current fragment with the selected one
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.fragmentContainerView, fragment, null)
+                            .commit();
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+                // Handle tab unselected event if needed
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
             }
         });
+
+
     }
 
     @Override
-    public boolean onSupportNavigateUp() {
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.topbar_menu, menu);
 
-        return super.onSupportNavigateUp();
+        return true;
+
     }
+
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    public void editButtonClick(MenuItem menuItem){
+        Intent intent = new Intent(this,PlantEditViewActivity.class);
+        startActivity(intent);
+    }
+
+
 }
