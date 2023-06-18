@@ -5,12 +5,12 @@
         android:icon="@drawable/bell"
         android:title="Alertas" />
     <item
-        android:id="@+id/shorts"
+        android:id="@+id/garden"
         android:icon="@drawable/leaf"
         android:title="Jardim" />
 
     <item
-        android:id="@+id/subscriptions"
+        android:id="@+id/sugestions"
         android:enabled="true"
         android:icon="@drawable/shine"
         android:title="Sugestões" />

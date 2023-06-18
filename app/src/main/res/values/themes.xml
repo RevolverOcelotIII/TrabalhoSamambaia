@@ -28,4 +28,17 @@
         <item name="android:statusBarColor">@color/register_button_garden</item>
         <item name="android:background">@color/register_button_garden</item>
     </style>
+    <style name="CardShape" parent="">
+        <item name="cornerSizeBottomLeft">15dp</item>
+        <item name="cornerSizeBottomRight">15dp</item>
+        <item name="cornerSizeTopLeft">15dp</item>
+        <item name="cornerSizeTopRight">15dp</item>
+    </style>
+    <style name="CarouselShape" parent="">
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+
+    </style>
 </resources>
