@@ -80,12 +80,12 @@
             android:id="@+id/cadastro_planta_regagem_editText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="date" />
+            android:editable="false" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/create_plant_button"
-        android:layout_width="179dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button_shape"
         android:elevation="10dp"

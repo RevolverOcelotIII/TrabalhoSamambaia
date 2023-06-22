@@ -93,7 +93,7 @@ public class CadastroPlantaBaseFragment extends Fragment {
     private void filterList(String busca) {
         List<Planta> lista_filtrada = new ArrayList<>();
         for (Planta planta : lista_plantas) {
-            if (planta.getNome().toLowerCase().contains(busca.toLowerCase()))
+            if (planta.getNome_comum().toLowerCase().contains(busca.toLowerCase()))
                 lista_filtrada.add(planta);
         }
         if (lista_filtrada.isEmpty()) Toast.makeText(this.getContext(), "Nenhuma planta encontrada...", Toast.LENGTH_SHORT).show();
