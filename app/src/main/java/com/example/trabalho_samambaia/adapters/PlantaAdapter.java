@@ -50,7 +50,7 @@ public class PlantaAdapter extends RecyclerView.Adapter<PlantaAdapter.PlantaView
             public void onClick(View view) {
                 //Toast.makeText(view.getContext(), listaPlantas.get(holder.getAdapterPosition()).getNome_cientifico(), Toast.LENGTH_SHORT).show();
                 Bundle args = new Bundle();
-                args.putInt("planta_id",  listaPlantas.get(holder.getAdapterPosition()).getId());
+                args.putInt("planta_id", listaPlantas.get(holder.getAdapterPosition()).getPlanta_base_id());
                 CadastroPlantaFragment fragment = new CadastroPlantaFragment();
                 fragment.setArguments(args);
                 FragmentManager fragmentManager = ((AppCompatActivity) view.getContext()).getSupportFragmentManager();
@@ -81,7 +81,7 @@ public class PlantaAdapter extends RecyclerView.Adapter<PlantaAdapter.PlantaView
 
         public void bind(Planta planta) {
             tituloTextView.setText(planta.getNome_cientifico());
-            subtituloTextView.setText(planta.getNome());
+            subtituloTextView.setText(planta.getNome_comum());
 
             Glide.with(itemView).load(planta.getImagem_url()).into(imagemImageView);
 

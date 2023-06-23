@@ -1,15 +1,27 @@
 package com.example.trabalho_samambaia.fragments;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.PopupMenu;
+import android.widget.Toast;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.RequiresApi;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -20,10 +32,14 @@ import com.example.trabalho_samambaia.activities.GardenActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.net.URI;
+
 public class GardenHomeFragment extends Fragment {
 
     private FloatingActionButton addPlantsButton;
     private BottomNavigationView navBottom;
+
+    private ActivityResultLauncher<Intent> cameraLauncher;
 
     public GardenHomeFragment() {
         // Required empty public constructor
@@ -54,6 +70,27 @@ public class GardenHomeFragment extends Fragment {
 //                    return false;
 //            }
 //        });
+
+        cameraLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+            if (result.getResultCode() == Activity.RESULT_OK) {
+                // A foto foi tirada com sucesso, você pode acessar a imagem capturada através do objeto Intent
+                Intent data = result.getData();
+                try {
+                    Bitmap bitmap = data.getParcelableExtra("data");
+                    Intent intent = new Intent(getActivity(), CadastroPlantaActivity.class);
+                    intent.putExtra("foto_bitmap", bitmap);
+                    startActivity(intent);
+
+                } catch (Exception e) {
+                    Log.d("teste", e.getMessage());
+                }
+
+
+            } else {
+                // O usuário cancelou a captura da foto ou ocorreu algum erro
+                // Lide com isso de acordo com sua lógica de negócio
+            }
+        });
         return view;
     }
 
@@ -67,11 +104,20 @@ public class GardenHomeFragment extends Fragment {
             switch (item.getItemId()) {
                 case R.id.menu_manual:
                     Intent intent = new Intent(getActivity(), CadastroPlantaActivity.class);
-                    intent.putExtra("register_type",1);
+                    intent.putExtra("register_type", 1);
                     startActivity(intent);
                     return true;
                 case R.id.menu_identify:
-                    // Ação para a opção "Identificar"
+                    // No método onCreate() ou onCreateView() do seu Fragment
+
+                    if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+                        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                        if (takePictureIntent.resolveActivity(requireActivity().getPackageManager()) != null) {
+                            cameraLauncher.launch(takePictureIntent);
+                        }
+                    } else {
+                        requestCameraPermissionLauncher.launch(Manifest.permission.CAMERA);
+                    }
                     return true;
                 default:
                     return false;
@@ -101,4 +147,15 @@ public class GardenHomeFragment extends Fragment {
 //        transaction.commit();
 //    }
 
+    private ActivityResultLauncher<String> requestCameraPermissionLauncher =
+            registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGranted -> {
+                if (isGranted) {
+                    Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                    if (takePictureIntent.resolveActivity(requireActivity().getPackageManager()) != null) {
+                        cameraLauncher.launch(takePictureIntent);
+                    }
+                } else {
+                    // A permissão foi negada
+                }
+            });
 }
