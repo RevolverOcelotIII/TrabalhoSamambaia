@@ -15,7 +15,7 @@
         android:theme="@style/Theme.TrabalhoSamambaia"
         tools:targetApi="31">
         <activity
-            android:name=".PlantViewer"
+            android:name=".fragments.PlantViewer"
             android:exported="false"
             android:label="@string/title_activity_visualizacao_planta"
             android:theme="@style/Theme.TrabalhoSamambaia" />

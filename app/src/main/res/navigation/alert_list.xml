@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/alert"
-        android:name="com.example.trabalho_samambaia.AlertitemFragment"
+        android:name="com.example.trabalho_samambaia.fragments.AlertitemFragment"
         android:label="fragment_item_list"
         tools:layout="@layout/fragment_item_list" />
 </navigation>

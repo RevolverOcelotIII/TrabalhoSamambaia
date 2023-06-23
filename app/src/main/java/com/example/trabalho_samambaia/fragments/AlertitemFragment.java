@@ -2,18 +2,19 @@ package com.example.trabalho_samambaia.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.trabalho_samambaia.R;
-import com.example.trabalho_samambaia.activities.PlaceholderContent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
 import com.example.trabalho_samambaia.adapters.MyAlertitemRecyclerViewAdapter;
+import com.example.trabalho_samambaia.R;
+import com.example.trabalho_samambaia.placeholder.PlaceholderContent;
 
 /**
  * Classe para renderizar recycler view dos alertas
@@ -30,6 +31,8 @@ public class AlertitemFragment extends Fragment {
     public AlertitemFragment() {
     }
 
+
+    @SuppressWarnings("unused")
     public static AlertitemFragment newInstance(int columnCount) {
         AlertitemFragment fragment = new AlertitemFragment();
         Bundle args = new Bundle();

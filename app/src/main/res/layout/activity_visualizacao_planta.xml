@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context=".PlantViewer">
+    tools:context=".fragments.PlantViewer">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="com.example.trabalho_samambaia.FirstFragment"
+        android:name="com.example.trabalho_samambaia.fragments.FirstFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

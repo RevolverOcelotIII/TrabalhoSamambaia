@@ -1,7 +1,8 @@
-package com.example.trabalho_samambaia;
+package com.example.trabalho_samambaia.fragments;
 
 import android.os.Bundle;
 
+import com.example.trabalho_samambaia.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;

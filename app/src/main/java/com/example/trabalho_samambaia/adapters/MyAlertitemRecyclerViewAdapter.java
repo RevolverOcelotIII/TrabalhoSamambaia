@@ -1,12 +1,12 @@
 package com.example.trabalho_samambaia.adapters;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.trabalho_samambaia.activities.PlaceholderContent;
+import com.example.trabalho_samambaia.placeholder.PlaceholderContent.PlaceholderItem;
 import com.example.trabalho_samambaia.databinding.FragmentItemBinding;
 
 import java.util.List;
@@ -16,9 +16,9 @@ import java.util.List;
  */
 public class MyAlertitemRecyclerViewAdapter extends RecyclerView.Adapter<MyAlertitemRecyclerViewAdapter.ViewHolder> {
 
-    private final List<PlaceholderContent.PlaceholderItem> mValues;
+    private final List<PlaceholderItem> mValues;
 
-    public MyAlertitemRecyclerViewAdapter(List<PlaceholderContent.PlaceholderItem> items) {
+    public MyAlertitemRecyclerViewAdapter(List<PlaceholderItem> items) {
         mValues = items;
     }
 
@@ -44,7 +44,7 @@ public class MyAlertitemRecyclerViewAdapter extends RecyclerView.Adapter<MyAlert
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final TextView mIdView;
         public final TextView mContentView;
-        public PlaceholderContent.PlaceholderItem mItem;
+        public PlaceholderItem mItem;
 
         public ViewHolder(FragmentItemBinding binding) {
             super(binding.getRoot());

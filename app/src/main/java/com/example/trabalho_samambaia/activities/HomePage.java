@@ -1,8 +1,10 @@
-package com.example.trabalho_samambaia;
+package com.example.trabalho_samambaia.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.trabalho_samambaia.R;
 
 public class HomePage extends AppCompatActivity {
 

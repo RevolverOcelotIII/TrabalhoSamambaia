@@ -1,4 +1,4 @@
-package com.example.trabalho_samambaia;
+package com.example.trabalho_samambaia.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,6 +13,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.trabalho_samambaia.R;
 import com.example.trabalho_samambaia.databinding.FragmentFirstBinding;
 
 public class FirstFragment extends Fragment {
