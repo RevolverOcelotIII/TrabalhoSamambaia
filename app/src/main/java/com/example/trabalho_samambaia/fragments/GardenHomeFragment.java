@@ -41,19 +41,19 @@ public class GardenHomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_garden_home, container, false);
 
-        addPlantsButton = view.findViewById(R.id.add_plants);
-        addPlantsButton.setOnClickListener(v -> showPopupMenu());
+//        addPlantsButton = view.findViewById(R.id.add_plants);
+//        addPlantsButton.setOnClickListener(v -> showPopupMenu());
 
-        navBottom = view.findViewById(R.id.bottomNavigationView);
-        navBottom.setOnItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.alert:
-                    openAlertItemFragment();
-                    return true;
-                default:
-                    return false;
-            }
-        });
+//        navBottom = view.findViewById(R.id.bottomNavigationView);
+//        navBottom.setOnItemSelectedListener(item -> {
+//            switch (item.getItemId()) {
+//                case R.id.alert:
+//                    openAlertItemFragment();
+//                    return true;
+//                default:
+//                    return false;
+//            }
+//        });
         return view;
     }
 
@@ -81,24 +81,24 @@ public class GardenHomeFragment extends Fragment {
         popupMenu.show();
     }
 
-    private void openAlertItemFragment() {
-        // Cria uma instância do AlertitemFragment
-        AlertitemFragment alertitemFragment = AlertitemFragment.newInstance(1);
-
-        // Obtém o FragmentManager do AppCompatActivity
-        FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
-
-        // Inicia a transação do FragmentManager
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-
-        // Substitui o fragmento atual pelo AlertitemFragment
-        transaction.replace(R.id.container, alertitemFragment);
-
-        // Adiciona a transação à pilha de volta (para permitir voltar ao fragmento anterior)
-        transaction.addToBackStack(null);
-
-        // Executa a transação
-        transaction.commit();
-    }
+//    private void openAlertItemFragment() {
+//        // Cria uma instância do AlertitemFragment
+//        AlertitemFragment alertitemFragment = AlertitemFragment.newInstance(1);
+//
+//        // Obtém o FragmentManager do AppCompatActivity
+//        FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+//
+//        // Inicia a transação do FragmentManager
+//        FragmentTransaction transaction = fragmentManager.beginTransaction();
+//
+//        // Substitui o fragmento atual pelo AlertitemFragment
+//        transaction.replace(R.id.container, alertitemFragment);
+//
+//        // Adiciona a transação à pilha de volta (para permitir voltar ao fragmento anterior)
+//        transaction.addToBackStack(null);
+//
+//        // Executa a transação
+//        transaction.commit();
+//    }
 
 }

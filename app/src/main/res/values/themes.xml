@@ -4,7 +4,7 @@
     <style name="Theme.TrabalhoSamambaia" parent="Theme.MaterialComponents.Light.NoActionBar">
 
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/register_button_garden</item>
+        <!-- <item name="colorPrimary">@color/register_button_garden</item>-->
         <item name="colorPrimaryVariant">@color/register_button_garden</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -27,5 +27,18 @@
     <style name="Theme.splash_screen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:statusBarColor">@color/register_button_garden</item>
         <item name="android:background">@color/register_button_garden</item>
+    </style>
+    <style name="CardShape" parent="">
+        <item name="cornerSizeBottomLeft">15dp</item>
+        <item name="cornerSizeBottomRight">15dp</item>
+        <item name="cornerSizeTopLeft">15dp</item>
+        <item name="cornerSizeTopRight">15dp</item>
+    </style>
+    <style name="CarouselShape" parent="">
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+
     </style>
 </resources>
