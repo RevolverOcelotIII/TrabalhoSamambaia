@@ -4,7 +4,7 @@
     <style name="Theme.TrabalhoSamambaia" parent="Theme.MaterialComponents.Light.NoActionBar">
 
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/register_button_garden</item>
+        <!-- <item name="colorPrimary">@color/register_button_garden</item>-->
         <item name="colorPrimaryVariant">@color/register_button_garden</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->

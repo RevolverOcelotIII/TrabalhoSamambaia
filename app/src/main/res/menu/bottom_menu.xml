@@ -3,11 +3,11 @@
     <item
         android:id="@+id/alert"
         android:icon="@drawable/bell"
-        android:title="Alertas" />
+        android:title="@string/alertas" />
     <item
         android:id="@+id/garden"
         android:icon="@drawable/leaf"
-        android:title="Jardim" />
+        android:title="@string/jardim" />
 
     <item
         android:id="@+id/sugestions"
