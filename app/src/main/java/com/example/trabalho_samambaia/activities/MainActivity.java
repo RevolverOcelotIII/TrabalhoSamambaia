@@ -13,12 +13,12 @@ public class MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
 
-    Home home = new Home();
+    HomePage home = new HomePage();
 
     @Override
     protected void onStart() {
         super.onStart();
-        setContentView(R.layout.splash_screen);
+        setContentView(R.layout.fragment_splash_screen);
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bottomNavigationView = findViewById(R.id.bottomNavigationView);
-
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, home).commit();
+//        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+//
+//        getSupportFragmentManager().beginTransaction().replace(R.id.container, home).commit();
     }
 }

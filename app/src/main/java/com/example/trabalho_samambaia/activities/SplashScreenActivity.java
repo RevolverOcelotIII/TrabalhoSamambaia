@@ -16,7 +16,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.fragment_splash_screen);
         new Handler().postDelayed(() -> {
             // Após o tempo definido, inicia a MainActivity
-            Intent intent = new Intent(SplashScreenActivity.this, GardenActivity.class);
+            Intent intent = new Intent(SplashScreenActivity.this, HomePage.class);
             startActivity(intent);
             finish();
         }, 2000);

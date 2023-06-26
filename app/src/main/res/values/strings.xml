@@ -3,8 +3,7 @@
     <string name="app_name">Samambaia</string>
     <string name="garden_page">Seu Jardim</string>
 
-    <string name="registerYourGarden">Cadastre suas plantas agora e\ncomece a cuidar delas!</string>
-    <string name="emptyGardenText">Seu jardim está vazio</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="registerYourGarden">Cadastre suas plantas agora e\ncomece a cuidar delas!</string>
