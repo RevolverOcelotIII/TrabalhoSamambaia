@@ -1,7 +1,7 @@
 <resources>
     <!-- Base application theme. -->
 
-    <style name="Theme.TrabalhoSamambaia" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.TrabalhoSamambaia.light" parent="Theme.MaterialComponents.Light.NoActionBar">
 
         <!-- Primary brand color. -->
         <!-- <item name="colorPrimary">@color/register_button_garden</item>-->

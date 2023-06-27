@@ -8,6 +8,7 @@
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp"
     android:foreground="?attr/selectableItemBackground"
+
     app:shapeAppearance="@style/CarouselShape">
 
     <com.google.android.material.card.MaterialCardView

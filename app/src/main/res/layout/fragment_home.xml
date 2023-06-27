@@ -35,19 +35,21 @@
 
         <Button
             android:id="@+id/registerButton"
-            android:layout_width="185dp"
-            android:layout_height="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/button_shape"
+
+
             android:text="Cadastrar"
             android:textColor="@color/white"
-            android:theme="@android:style/Theme.NoTitleBar"
 
             app:layout_constraintBottom_toBottomOf="parent"
+
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.473"
             app:layout_constraintStart_toStartOf="parent"
+
             app:layout_constraintTop_toBottomOf="@+id/registerYourGarden"
-            app:layout_constraintVertical_bias="0.113"
+            app:layout_constraintVertical_bias="0.133"
             app:toggleCheckedStateOnClick="false" />
 
         <TextView
