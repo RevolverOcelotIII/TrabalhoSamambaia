@@ -47,6 +47,30 @@ public class PlantaDAO {
         return -1;
     }
 
+    public int editPlanta(Planta planta) {
+        try {
+            ContentValues values = new ContentValues();
+            values.put("nome_comum", planta.getNome_comum());
+            values.put("nome_cientifico", planta.getNome_cientifico());
+            values.put("nome_personalizado", planta.getNome_personalizado());
+            values.put("ciclo", planta.getCiclo());
+            values.put("regagem", planta.getRegagem());
+            values.put("proxima_adubagem", planta.getProxima_adubagem());
+            values.put("banho_sol", planta.getBanho_sol());
+            //values.put("user_id", planta.getUsuario().getId());
+            values.put("planta_base_id", planta.getPlanta_base_id());
+            values.put("imagem_url", planta.getImagem_url());
+            String[] args = {String.valueOf(planta.getId())};
+            int created_planta_id = (int) write.update(ConnectionFactory.TABELA_PLANTA, values, "id = ?",args);
+            Log.d("database", "editPlanta: " + getPlantaFromId(created_planta_id).toString());
+            return (int) created_planta_id;
+
+        } catch (Exception e) {
+            Log.d("database", "createPlanta: " + e.getMessage());
+        }
+        return -1;
+    }
+
     //Não sei pra q isso serve
     @SuppressLint("Range")
     public Planta getPlantaFromId(int planta_id) {

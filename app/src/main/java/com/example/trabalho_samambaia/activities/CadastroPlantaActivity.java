@@ -31,8 +31,8 @@ public class CadastroPlantaActivity extends AppCompatActivity {
         Toolbar cadastro_planta_toolbar = findViewById(R.id.cadastro_planta_toolbar);
         setSupportActionBar(cadastro_planta_toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        if(intent.getParcelableExtra("foto_bitmap")!=null){
-            try{
+        if (intent.getParcelableExtra("foto_bitmap") != null) {
+            try {
                 getSupportActionBar().setTitle("Personalize sua planta!");
                 Bundle args = new Bundle();
                 args.putParcelable("foto_bitmap", intent.getParcelableExtra("foto_bitmap"));
@@ -44,10 +44,19 @@ public class CadastroPlantaActivity extends AppCompatActivity {
                 fragmentTransaction.replace(R.id.cadastro_planta_fragment, fragment);
                 fragmentTransaction.commit();
 
-            }catch (Exception e){
+            } catch (Exception e) {
                 Log.d("teste", e.getMessage());
             }
 
+        } else if (intent.getIntExtra("plantaedit_id", -1) != -1) {
+            getSupportActionBar().setTitle("Edite sua planta!");
+            Bundle args = new Bundle();
+            args.putInt("plantaedit_id",intent.getIntExtra("plantaedit_id", -1));
+            CadastroPlantaBaseFragment plantaBaseFragment = new CadastroPlantaBaseFragment();
+            plantaBaseFragment.setArguments(args);
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.cadastro_planta_fragment, plantaBaseFragment);
+            transaction.commit();
         } else {
             getSupportActionBar().setTitle("Selecione qual planta é a sua!");
             CadastroPlantaBaseFragment plantaBaseFragment = new CadastroPlantaBaseFragment();
@@ -72,13 +81,11 @@ public class CadastroPlantaActivity extends AppCompatActivity {
         });
 
 
-
-
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if(item.getItemId() == android.R.id.home){
+        if (item.getItemId() == android.R.id.home) {
             onBackPressed();
             return true;
         }
