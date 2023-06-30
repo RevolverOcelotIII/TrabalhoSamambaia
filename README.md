@@ -10,13 +10,13 @@ ou automaticamente, utilizando a câmera do dispositivo para identificar a plant
 
 ## Concepção
 * [Mapa Conceitual](#)
-* [Storyboard](#)
+* [Storyboard](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/assets/storyboard.png?raw=true)
 * [Apresentação em slides](#)
 
 ## Prototipação de telas
 * [Baixa fidelidade](#)
-* [Média fidelidade](#)
-* [Alta fidelidade](#)
+* [Média fidelidade](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/protótipos/media.png?raw=true)
+* [Alta fidelidade](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/protótipos/alta.png?raw=true)
 
 ## Links
 * [Diagrama da atividade](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/diagramas/Diagrama_atividade_samambaia.jpg?raw=true)
