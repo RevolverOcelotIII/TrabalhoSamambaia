@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "243754578777",
+    "project_id": "trabalhosamambaia",
+    "storage_bucket": "trabalhosamambaia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243754578777:android:9e5bddd6957805fd8e5248",
+        "android_client_info": {
+          "package_name": "com.example.trabalho_samambaia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243754578777-j0ei4scdi3neeh4vf08rqpm50u3qj71m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_eV3vH0_TTt5CtlI1E4yqw7ijDRRHL8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243754578777-j0ei4scdi3neeh4vf08rqpm50u3qj71m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
