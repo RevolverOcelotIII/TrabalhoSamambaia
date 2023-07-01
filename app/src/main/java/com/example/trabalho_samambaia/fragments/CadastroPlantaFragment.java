@@ -35,6 +35,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.trabalho_samambaia.R;
+import com.example.trabalho_samambaia.adapters.PlantaListAdapter;
 import com.example.trabalho_samambaia.dao.PlantaDAO;
 import com.example.trabalho_samambaia.model.Planta;
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -44,6 +45,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
@@ -57,6 +59,9 @@ public class CadastroPlantaFragment extends Fragment {
     private TextInputEditText planta_nome_editText, planta_adubagem_editText;
 
     private Button create_plant_button;
+
+    private List<Planta> genericListPlant= new ArrayList<>();
+    public PlantaListAdapter plantaList;
 
     private Planta planta_base;
 
@@ -172,6 +177,16 @@ public class CadastroPlantaFragment extends Fragment {
 
                         plantaDAO.createPlanta(planta_base);
 
+                        plantaDAO.createPlanta(planta_base);
+                        genericListPlant.add(plantaDAO.getPlantaFromId(planta_base.getId()));
+
+                        plantaList = new PlantaListAdapter(genericListPlant);
+
+                        ListPlantsFragment listPlantsFragment = (ListPlantsFragment) getParentFragmentManager().findFragmentById(R.id.planta_item_list);
+                        if (listPlantsFragment != null) {
+                            listPlantsFragment.setPlantaListAdapter(plantaList);
+                        }
+
                         getActivity().finish();
 
                     }
@@ -187,31 +202,6 @@ public class CadastroPlantaFragment extends Fragment {
                         calendar.get(calendar.YEAR), calendar.get(calendar.MONTH), calendar.get(calendar.DAY_OF_MONTH));
                 datePickerDialog.show();
             });
-
-
-
-/*
-            create_plant_button.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    PlantaDAO plantaDAO = new PlantaDAO(getContext());
-                    planta_base.setNome_personalizado(planta_nome_editText.getText().toString());
-                    if (args.getParcelable("foto_bitmap") != null) {
-                        Bitmap bitmap = (Bitmap) args.getParcelable("foto_bitmap");
-                        Random random = new Random();
-                        planta_base.setImagem_url(createImageFromBitmap(getContext(), bitmap, "" + random.nextInt()));
-                    }
-                    //int proxima_adubagem = (Integer) planta_adubagem_editText.getText().toString().substring(0,2);
-
-                    planta_base.setProxima_adubagem(planta_adubagem_editText.getText().toString());
-
-                    plantaDAO.createPlanta(planta_base);
-
-                    getActivity().finish();
-
-                }
-            });
-*/
             mGetContentLauncher = registerForActivityResult(new ActivityResultContracts.GetContent(),
                     new ActivityResultCallback<Uri>() {
                         @Override
