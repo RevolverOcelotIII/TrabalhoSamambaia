@@ -21,7 +21,8 @@
 
     <style name="Theme.TrabalhoSamambaia.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="Theme.GardenActivityStyle" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="GardenActivityStyle">
+        <item name="android:background">@color/button_background</item>
     </style>
 
     <style name="Theme.splash_screen" parent="Theme.MaterialComponents.DayNight.NoActionBar">

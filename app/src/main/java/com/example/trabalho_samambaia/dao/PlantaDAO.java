@@ -109,4 +109,24 @@ public class PlantaDAO {
         return plantas;
     }
 
+    @SuppressLint("Range")
+    public List<Planta> gettAllPlants() {
+        List<Planta> plantas = new ArrayList<>();
+        Cursor cursor = read.rawQuery("SELECT * FROM " + ConnectionFactory.TABELA_PLANTA + ";", null);
+        while (cursor.moveToNext()) {
+            Planta planta = new Planta();
+            planta.setId(cursor.getInt(cursor.getColumnIndex("id")));
+            planta.setNome_comum(cursor.getString(cursor.getColumnIndex("nome_comum")));
+            planta.setNome_cientifico(cursor.getString(cursor.getColumnIndex("nome_cientifico")));
+            planta.setNome_personalizado(cursor.getString(cursor.getColumnIndex("nome_personalizado")));
+            planta.setRegagem(cursor.getString(cursor.getColumnIndex("regagem")));
+            planta.setBanho_sol(cursor.getString(cursor.getColumnIndex("banho_sol")));
+            planta.setCiclo(cursor.getString(cursor.getColumnIndex("ciclo")));
+            planta.setImagem_url(cursor.getString(cursor.getColumnIndex("imagem_url")));
+            planta.setPlanta_base_id(cursor.getInt(cursor.getColumnIndex("planta_base_id")));
+            plantas.add(planta);
+        }
+        return plantas;
+    }
+
 }

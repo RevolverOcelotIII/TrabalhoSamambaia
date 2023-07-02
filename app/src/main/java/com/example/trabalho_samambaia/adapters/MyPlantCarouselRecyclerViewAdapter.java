@@ -4,12 +4,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.trabalho_samambaia.fragments.placeholder.PlaceholderContent.PlaceholderItem;
 import com.example.trabalho_samambaia.databinding.FragmentCarouselItemBinding;
+import com.example.trabalho_samambaia.model.Planta;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * {@link RecyclerView.Adapter} that can display a {@link PlaceholderItem}.
@@ -17,9 +21,9 @@ import java.util.List;
  */
 public class MyPlantCarouselRecyclerViewAdapter extends RecyclerView.Adapter<MyPlantCarouselRecyclerViewAdapter.ViewHolder> {
 
-    private final List<PlaceholderItem> mValues;
+    private final List<Planta> mValues;
 
-    public MyPlantCarouselRecyclerViewAdapter(List<PlaceholderItem> items) {
+    public MyPlantCarouselRecyclerViewAdapter(List<Planta> items) {
         mValues = items;
     }
 
@@ -33,8 +37,9 @@ public class MyPlantCarouselRecyclerViewAdapter extends RecyclerView.Adapter<MyP
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(mValues.get(position).id);
-        holder.mContentView.setText(mValues.get(position).content);
+        holder.plantName.setText(mValues.get(position).getNome_comum());
+        holder.plantCientificName.setText(mValues.get(position).getNome_cientifico());
+        Glide.with(holder.itemView).load(mValues.get(position).getImagem_url()).into(holder.plantImage);
     }
 
     @Override
@@ -43,19 +48,21 @@ public class MyPlantCarouselRecyclerViewAdapter extends RecyclerView.Adapter<MyP
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public final TextView mIdView;
-        public final TextView mContentView;
-        public PlaceholderItem mItem;
+        public final TextView plantName;
+        public final TextView plantCientificName;
+        public final ImageView plantImage;
+        public Planta mItem;
 
         public ViewHolder(FragmentCarouselItemBinding binding) {
             super(binding.getRoot());
-            mIdView = binding.userName;
-            mContentView = binding.userSubtitle;
+            plantName = binding.plantName;
+            plantCientificName = binding.plantCientificName;
+            plantImage = binding.plantImg;
         }
 
         @Override
         public String toString() {
-            return super.toString() + " '" + mContentView.getText() + "'";
+            return super.toString() + " '" + plantName.getText() + "'";
         }
     }
 }

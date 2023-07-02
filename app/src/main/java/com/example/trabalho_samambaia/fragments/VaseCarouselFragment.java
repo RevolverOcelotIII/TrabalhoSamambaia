@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.trabalho_samambaia.R;
 import com.example.trabalho_samambaia.adapters.MyPlantCarouselRecyclerViewAdapter;
 import com.example.trabalho_samambaia.fragments.placeholder.PlaceholderContent;
+import com.example.trabalho_samambaia.model.Planta;
 import com.google.android.material.carousel.CarouselLayoutManager;
 
 /**
@@ -60,7 +61,7 @@ public class VaseCarouselFragment extends Fragment {
             Context context = view.getContext();
             RecyclerView recyclerView = (RecyclerView) view;
             recyclerView.setLayoutManager(new CarouselLayoutManager());
-            recyclerView.setAdapter(new MyPlantCarouselRecyclerViewAdapter(PlaceholderContent.ITEMS));
+            recyclerView.setAdapter(new MyPlantCarouselRecyclerViewAdapter(Planta.gerarListaPlaceholder(this.getContext())));
         }
         return view;
     }

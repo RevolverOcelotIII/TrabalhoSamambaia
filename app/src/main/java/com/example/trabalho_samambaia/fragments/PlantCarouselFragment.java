@@ -13,7 +13,13 @@ import android.view.ViewGroup;
 import com.example.trabalho_samambaia.R;
 import com.example.trabalho_samambaia.adapters.MyPlantCarouselRecyclerViewAdapter;
 import com.example.trabalho_samambaia.fragments.placeholder.PlaceholderContent;
+import com.example.trabalho_samambaia.model.Planta;
 import com.google.android.material.carousel.CarouselLayoutManager;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * A fragment representing a list of Items.
@@ -61,8 +67,18 @@ public class PlantCarouselFragment extends Fragment {
             Context context = view.getContext();
             RecyclerView recyclerView = (RecyclerView) view;
             recyclerView.setLayoutManager(new CarouselLayoutManager());
-            recyclerView.setAdapter(new MyPlantCarouselRecyclerViewAdapter(PlaceholderContent.ITEMS));
+            recyclerView.setAdapter(new MyPlantCarouselRecyclerViewAdapter(getPlantSugestion()));
         }
         return view;
+    }
+
+    private List<Planta> getPlantSugestion(){
+        List<Planta> plantsList = new ArrayList<>();
+
+        for(int i = 0; i<5;i++){
+            plantsList.add(Planta.getRandomPlanta(this.getContext()));
+        }
+
+        return plantsList;
     }
 }

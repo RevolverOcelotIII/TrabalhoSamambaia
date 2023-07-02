@@ -17,7 +17,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         app:shapeAppearanceOverlay="@style/CardShape"
-        app:strokeColor="#070707"
         app:strokeWidth="1dp">
 
         <LinearLayout
@@ -28,44 +27,44 @@
             android:orientation="vertical">
 
             <!-- Media -->
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/header_container"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="15dp">
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/header_container"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:padding="15dp">-->
 
-                <ImageView
-                    android:id="@+id/user_profile_pic"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+<!--                <ImageView-->
+<!--                    android:id="@+id/user_profile_pic"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
 
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/plantplaceholder" />
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:srcCompat="@drawable/plantplaceholder" />-->
 
-                <TextView
-                    android:id="@+id/user_subtitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:text="TextView"
-                    android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/user_profile_pic"
-                    app:layout_constraintStart_toEndOf="@+id/user_profile_pic"
-                    app:layout_marginBaseline="5dp" />
+<!--                <TextView-->
+<!--                    android:id="@+id/user_subtitle"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:text="TextView"-->
+<!--                    android:textSize="10sp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/user_profile_pic"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/user_profile_pic"-->
+<!--                    app:layout_marginBaseline="5dp" />-->
 
-                <TextView
-                    android:id="@+id/user_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:text="TextView"
-                    android:textSize="12sp"
-                    app:layout_constraintStart_toEndOf="@+id/user_profile_pic"
-                    app:layout_constraintTop_toTopOf="@+id/user_profile_pic"
-                    app:layout_marginBaseline="5dp" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+<!--                <TextView-->
+<!--                    android:id="@+id/user_name"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:text="TextView"-->
+<!--                    android:textSize="12sp"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/user_profile_pic"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/user_profile_pic"-->
+<!--                    app:layout_marginBaseline="5dp" />-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
 
             <ImageView
                 android:id="@+id/plant_img"
@@ -88,6 +87,7 @@
                     android:id="@+id/plant_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:text="tes1"
                     android:textAppearance="?attr/textAppearanceHeadline6"
                     android:textSize="16sp" />
@@ -96,21 +96,22 @@
                     android:id="@+id/plant_cientific_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginTop="8dp"
                     android:text="test2"
                     android:textAppearance="?attr/textAppearanceBody2"
                     android:textColor="?android:attr/textColorSecondary"
                     android:textSize="12sp" />
 
-                <TextView
-                    android:id="@+id/plant_description"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="33dp"
-                    android:text="test3"
-                    android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="?android:attr/textColorSecondary"
-                    android:textSize="12sp" />
+<!--                <TextView-->
+<!--                    android:id="@+id/plant_description"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="33dp"-->
+<!--                    android:text="test3"-->
+<!--                    android:textAppearance="?attr/textAppearanceBody2"-->
+<!--                    android:textColor="?android:attr/textColorSecondary"-->
+<!--                    android:textSize="12sp" />-->
 
             </LinearLayout>
 
