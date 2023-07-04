@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_manual"
-        android:title="Manual"
+        android:title="@string/buttonMenuManual"
         android:icon="@drawable/leaf" />
     <item
         android:id="@+id/menu_identify"
-        android:title="Identificar"
+        android:title="@string/buttonMenuIdentify"
         android:icon="@drawable/bell" />
 </menu>

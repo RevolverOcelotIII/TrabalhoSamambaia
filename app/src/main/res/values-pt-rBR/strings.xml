@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Samambaia</string>
+    <string name="garden_page">Seu Jardim</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="registerYourGarden">Cadastre suas plantas agora e\ncomece a cuidar delas!</string>
+    <string name="emptyGardenText">Seu jardim está vazio</string>
+    <string name="alerts">Alertas</string>
+    <string name="gardenPageName">Jardim</string>
+    <string name="suggestion">Sugestões</string>
+    <string name="title_activity_visualizacao_planta">VisualizacaoPlanta</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previousButton">Anterior</string>
+    <string name="plantRegistration">Cadastrando Planta</string>
+    <string name="plantButtonDescription">Nova Planta Botão</string>
+    <string name="buttonPlantView">Botão de visualização de planta</string>
+    <string name="yourPlantTitle">Sua planta</string>
+    <string name="yourPlantType">Samambaia (Samambaia)</string>
+    <string name="plantOptionalName">nome (opcional)</string>
+    <string name="plantLastFertilization">Última adubagem (opcional)</string>
+    <string name="plantCityLocation">Salvador</string>
+    <string name="plantCreationButton">Cadastrar Planta</string>
+    <string name="searchPlant">Buscar planta:</string>
+    <string name="searchingPlantQueryHint">Pesquisar...</string>
+    <string name="plantsForYourGarden">Plantas para seu jardim</string>
+    <string name="plantRegisterButton">Cadastrar</string>
+    <string name="waterIconAlert">Alerta de Água: ícone</string>
+    <string name="yourPlantSurname">Sambinha</string>
+    <string name="yourPlantNextIrrigation">Próxima regagem ás 15:00</string>
+    <string name="nextIrrigationDescription">Regagem</string>
+    <string name="appNameDescription">Logo do Aplicativo: Samambaia</string>
+    <string name="plantScientificName">Tracheophyta</string>
+    <string name="plantTypicalName">Samambaia</string>
+    <string name="buttonMenuManual">Manual</string>
+    <string name="buttonMenuIdentify">Identificar</string>
+
+</resources>

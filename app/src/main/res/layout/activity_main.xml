@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -69,7 +68,7 @@
             android:layout_gravity="bottom|end"
             android:layout_marginRight="10dp"
             android:backgroundTint="@color/button_add_plants"
-            android:contentDescription="new plant button"
+            android:contentDescription="@string/plantButtonDescription"
             android:outlineSpotShadowColor="@color/button_add_plants"
             android:src="@drawable/add_icon"
             app:backgroundTint="@color/button_add_plants"

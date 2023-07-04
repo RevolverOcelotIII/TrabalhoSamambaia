@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="Sua planta"
+        android:text="@string/yourPlantTitle"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +26,7 @@
         android:layout_marginStart="16dp"
         android:textSize="16sp"
         android:textStyle="italic"
-        android:text="Samambaia (Samambaia)"
+        android:text="@string/yourPlantType"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sua_planta" />
 
@@ -55,7 +55,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:startIconDrawable="@drawable/plant_icon"
-        android:hint="nome (opcional)"
+        android:hint="@string/plantOptionalName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/planta_imageView">
@@ -75,7 +75,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:startIconDrawable="@drawable/clock_icon"
-        android:hint="última adubagem (opcional)"
+        android:hint="@string/plantLastFertilization"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cadastro_planta_nome_label">
@@ -92,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Salvador"
+        android:text="@string/plantCityLocation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cadastro_planta_regagem_label" />
@@ -103,7 +103,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button_shape"
         android:elevation="10dp"
-        android:text="Cadastrar Planta"
+        android:text="@string/plantCreationButton"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"

@@ -40,7 +40,7 @@
             android:background="@drawable/button_shape"
 
 
-            android:text="Cadastrar"
+            android:text="@string/plantRegisterButton"
             android:textColor="@color/white"
 
             app:layout_constraintBottom_toBottomOf="parent"

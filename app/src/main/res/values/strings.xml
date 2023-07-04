@@ -1,22 +1,38 @@
 <resources>
 
     <string name="app_name">Samambaia</string>
-    <string name="garden_page">Seu Jardim</string>
-
-
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="garden_page">Your Garden</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="registerYourGarden">Cadastre suas plantas agora e\ncomece a cuidar delas!</string>
-    <string name="emptyGardenText">Seu jardim está vazio</string>
-    <string name="alertas">Alertas</string>
-    <string name="jardim">Jardim</string>
-    <string name="sugestao">Sugestões</string>
-    <string name="title_activity_visualizacao_planta">VisualizacaoPlanta</string>
-    <!-- Strings used for fragments for navigation -->
+    <string name="registerYourGarden">Register your plants now and\nstart taking care of them!</string>
+    <string name="emptyGardenText">Your garden is empty</string>
+    <string name="alerts">Alerts</string>
+    <string name="gardenPageName">Garden</string>
+    <string name="suggestion">Suggestions</string>
+    <string name="title_activity_visualizacao_planta">PlantVisualization</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-
+    <string name="previousButton">Previous</string>
+    <string name="plantRegistration">plant registration</string>
+    <string name="plantButtonDescription">new plant button</string>
+    <string name="buttonPlantView">Plant view button</string>
+    <string name="plantCityLocation">Salvador</string>
+    <string name="plantScientificName">Tracheophyta</string>
+    <string name="yourPlantTitle">Your plant</string>
+    <string name="yourPlantType">Fern (Fern)</string>
+    <string name="plantOptionalName">name (optional)</string>
+    <string name="plantLastFertilization">Last fertilizer (optional)</string>
+    <string name="plantCreationButton">"Register Plant "</string>
+    <string name="searchPlant">Search plant:</string>
+    <string name="searchingPlantQueryHint">Searching...</string>
+    <string name="plantsForYourGarden">"Plants for your garden "</string>
+    <string name="plantRegisterButton">Register</string>
+    <string name="waterIconAlert">Water Alert: icon</string>
+    <string name="yourPlantSurname">Tiny Fern</string>
+    <string name="yourPlantNextIrrigation">Next irrigation at 15:00</string>
+    <string name="nextIrrigationDescription">Watering</string>
+    <string name="appNameDescription">Application Logo: Samambaia</string>
+    <string name="plantTypicalName">Fern</string>
+    <string name="buttonMenuManual">Manual</string>
+    <string name="buttonMenuIdentify">Identify</string>
 </resources>

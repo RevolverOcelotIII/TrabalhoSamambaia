@@ -3,17 +3,17 @@
     <item
         android:id="@+id/alert"
         android:icon="@drawable/bell"
-        android:title="@string/alertas" />
+        android:title="@string/alerts" />
     <item
         android:id="@+id/garden"
         android:icon="@drawable/leaf"
-        android:title="@string/jardim" />
+        android:title="@string/gardenPageName" />
 
     <item
         android:id="@+id/sugestions"
         android:enabled="true"
         android:icon="@drawable/shine"
-        android:title="Sugestões" />
+        android:title="@string/suggestion" />
     <item
         android:title=""
         />

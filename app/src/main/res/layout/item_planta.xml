@@ -22,7 +22,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:text="Tracheophyta"
+            android:text="@string/plantScientificName"
             android:textStyle="italic"
             android:textSize="18sp"
 
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:layout_marginBottom="8dp"
-            android:text="Samambaia"
+            android:text="@string/plantTypicalName"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imagem_planta_list"

@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="4dp"
-        android:text="Sambinha"
+        android:text="@string/yourPlantSurname"
         android:fontFamily="sans-serif-medium"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="20dp"
-        android:text="Próxima regagem ás 15:00"
+        android:text="@string/yourPlantNextIrrigation"
         android:textColor="@color/edit_text_grey"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,7 +41,7 @@
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="4dp"
-        android:contentDescription="Regagem"
+        android:contentDescription="@string/nextIrrigationDescription"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/regagem_image" />
