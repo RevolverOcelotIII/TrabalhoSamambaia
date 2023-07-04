@@ -176,7 +176,7 @@ public class CadastroPlantaFragment extends Fragment {
                         planta_base.setProxima_adubagem(planta_adubagem_editText.getText().toString());
 
                         plantaDAO.createPlanta(planta_base);
-
+/*
                         plantaDAO.createPlanta(planta_base);
                         genericListPlant.add(plantaDAO.getPlantaFromId(planta_base.getId()));
 
@@ -186,7 +186,7 @@ public class CadastroPlantaFragment extends Fragment {
                         if (listPlantsFragment != null) {
                             listPlantsFragment.setPlantaListAdapter(plantaList);
                         }
-
+*/
                         getActivity().finish();
 
                     }

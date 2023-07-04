@@ -13,18 +13,27 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.trabalho_samambaia.R;
 import com.example.trabalho_samambaia.activities.CadastroPlantaActivity;
+import com.example.trabalho_samambaia.dao.PlantaDAO;
+import com.example.trabalho_samambaia.model.Planta;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import java.util.List;
 
 public class GardenHomeFragment extends Fragment {
 
@@ -62,6 +71,16 @@ public class GardenHomeFragment extends Fragment {
 //                    return false;
 //            }
 //        });
+        /*
+        try {
+            CadastroPlantaBaseFragment fragment = new CadastroPlantaBaseFragment();
+            FragmentManager fragmentManager = ((AppCompatActivity) view.getContext()).getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.nav_host_fragment_container, fragment);
+            fragmentTransaction.commit();
+        }catch (Exception e){
+            Log.d("teste", "onCreateView: " + e.getMessage());
+        }*/
 
         cameraLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
             if (result.getResultCode() == Activity.RESULT_OK) {
@@ -119,7 +138,25 @@ public class GardenHomeFragment extends Fragment {
         popupMenu.show();
     }
 
-//    private void openAlertItemFragment() {
+    @Override
+    public void onResume() {
+        super.onResume();
+        PlantaDAO plantaDAO = new PlantaDAO(getContext());
+        List<Planta> plantas = plantaDAO.getAllPlantas();
+        if(plantas.size()>0){
+            try {
+                ListPlantsFragment fragment = new ListPlantsFragment();
+                FragmentManager fragmentManager = ((AppCompatActivity) getContext()).getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.nav_host_fragment_container, fragment);
+                fragmentTransaction.commit();
+            }catch (Exception e){
+                Log.d("teste", "onCreateView: " + e.getMessage());
+            }
+        } else Toast.makeText(getContext(), "Sem planta", Toast.LENGTH_SHORT).show();
+    }
+
+    //    private void openAlertItemFragment() {
 //        // Cria uma instância do AlertitemFragment
 //        AlertitemFragment alertitemFragment = AlertitemFragment.newInstance(1);
 //

@@ -1,6 +1,7 @@
 package com.example.trabalho_samambaia.fragments;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +12,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.trabalho_samambaia.R;
 import com.example.trabalho_samambaia.adapters.PlantaListAdapter;
+import com.example.trabalho_samambaia.dao.PlantaDAO;
+import com.example.trabalho_samambaia.model.Planta;
 
 import java.util.Collections;
+import java.util.List;
 
 public class ListPlantsFragment extends Fragment {
 
@@ -27,8 +31,11 @@ public class ListPlantsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        PlantaDAO plantaDAO = new PlantaDAO(getContext());
+        List<Planta> plantas = plantaDAO.getAllPlantas();
+        for (Planta p : plantas) Log.d("teste", "id da planta: "+ p.getId());
 
-        plantasAdapter = new PlantaListAdapter(Collections.emptyList());
+        plantasAdapter = new PlantaListAdapter(plantaDAO.getAllPlantas());
     }
 
     @Override

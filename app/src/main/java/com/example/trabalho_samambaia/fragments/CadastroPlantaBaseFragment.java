@@ -1,6 +1,5 @@
 package com.example.trabalho_samambaia.fragments;
 
-import android.content.res.AssetManager;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.SearchView;
@@ -8,28 +7,15 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.trabalho_samambaia.R;
-import com.example.trabalho_samambaia.adapters.PlantaAdapter;
+import com.example.trabalho_samambaia.adapters.PlantaBaseAdapter;
 import com.example.trabalho_samambaia.model.Planta;
-import com.google.gson.Gson;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 
-import org.json.JSONArray;
-
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +24,7 @@ public class CadastroPlantaBaseFragment extends Fragment {
 
     private SearchView busca_planta_searchView;
     private RecyclerView lista_plantas_recycler;
-    private PlantaAdapter plantaAdapter;
+    private PlantaBaseAdapter plantaBaseAdapter;
 
     private List<Planta> lista_plantas;
 
@@ -84,8 +70,8 @@ public class CadastroPlantaBaseFragment extends Fragment {
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this.getContext());
         lista_plantas_recycler.setLayoutManager(layoutManager);
-        plantaAdapter = new PlantaAdapter(lista_plantas);
-        lista_plantas_recycler.setAdapter(plantaAdapter);
+        plantaBaseAdapter = new PlantaBaseAdapter(lista_plantas);
+        lista_plantas_recycler.setAdapter(plantaBaseAdapter);
         // Inflate the layout for this fragment
         return view;
     }
