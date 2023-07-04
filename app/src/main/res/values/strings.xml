@@ -35,4 +35,12 @@
     <string name="plantTypicalName">Fern</string>
     <string name="buttonMenuManual">Manual</string>
     <string name="buttonMenuIdentify">Identify</string>
+    <string name="customizeYourPlant">Personalize a sua planta!</string>
+    <string name="editYourPlant">Edit your plant!</string>
+    <string name="selectYourPlant">Select which plant is yours!</string>
+    <string name="frequentWateringText">Water this plant twice this week</string>
+    <string name="averageWateringText">"Water this plant only once this week. "</string>
+    <string name="minimumWateringText">"Water this plant only once this month "</string>
+    <string name="noneWateringText">"Do not water this plant "</string>
+    <string name="noPlantFound">"No plant found... "</string>
 </resources>

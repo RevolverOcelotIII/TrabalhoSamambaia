@@ -33,7 +33,7 @@ public class CadastroPlantaActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         if (intent.getParcelableExtra("foto_bitmap") != null) {
             try {
-                getSupportActionBar().setTitle("Personalize sua planta!");
+                getSupportActionBar().setTitle(R.string.customizeYourPlant);
                 Bundle args = new Bundle();
                 args.putParcelable("foto_bitmap", intent.getParcelableExtra("foto_bitmap"));
                 CadastroPlantaFragment fragment = new CadastroPlantaFragment();
@@ -49,7 +49,7 @@ public class CadastroPlantaActivity extends AppCompatActivity {
             }
 
         } else if (intent.getIntExtra("plantaedit_id", -1) != -1) {
-            getSupportActionBar().setTitle("Edite sua planta!");
+            getSupportActionBar().setTitle(R.string.editYourPlant);
             Bundle args = new Bundle();
             args.putInt("plantaedit_id",intent.getIntExtra("plantaedit_id", -1));
             CadastroPlantaBaseFragment plantaBaseFragment = new CadastroPlantaBaseFragment();
@@ -58,7 +58,7 @@ public class CadastroPlantaActivity extends AppCompatActivity {
             transaction.replace(R.id.cadastro_planta_fragment, plantaBaseFragment);
             transaction.commit();
         } else {
-            getSupportActionBar().setTitle("Selecione qual planta é a sua!");
+            getSupportActionBar().setTitle(R.string.selectYourPlant);
             CadastroPlantaBaseFragment plantaBaseFragment = new CadastroPlantaBaseFragment();
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             transaction.replace(R.id.cadastro_planta_fragment, plantaBaseFragment);
@@ -73,9 +73,9 @@ public class CadastroPlantaActivity extends AppCompatActivity {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 Fragment currentFragment = fragmentManager.findFragmentById(R.id.cadastro_planta_fragment);
                 if (currentFragment instanceof CadastroPlantaBaseFragment) {
-                    getSupportActionBar().setTitle("Selecione qual planta é a sua!");
+                    getSupportActionBar().setTitle(R.string.selectYourPlant);
                 } else if (currentFragment instanceof CadastroPlantaFragment) {
-                    getSupportActionBar().setTitle("Personalize sua planta!");
+                    getSupportActionBar().setTitle(R.string.customizeYourPlant);
                 }
             }
         });

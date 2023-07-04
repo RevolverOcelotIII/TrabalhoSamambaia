@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.trabalho_samambaia.R;
 import com.example.trabalho_samambaia.databinding.FragmentItemBinding;
 import com.example.trabalho_samambaia.model.Planta;
 
@@ -94,16 +95,16 @@ public class MyAlertitemRecyclerViewAdapter extends RecyclerView.Adapter<MyAlert
         String wateringText = "";
         switch (watering){
             case "Frequent":
-                wateringText = "Regue esta planta duas vezes esta semana";
+                wateringText = String.valueOf(R.string.frequentWateringText);
                 break;
             case "Average":
-                wateringText =  "Regue esta planta apenas uma vez esta semana";
+                wateringText =  String.valueOf(R.string.averageWateringText);
                 break;
             case "Minimum":
-                wateringText =  "Regue esta planta apenas uma vez este mês";
+                wateringText =  String.valueOf(R.string.minimumWateringText);
                 break;
             case "None":
-                wateringText = "Não regue esta planta";
+                wateringText = String.valueOf(R.string.noneWateringText);
                 break;
         }
         return wateringText;

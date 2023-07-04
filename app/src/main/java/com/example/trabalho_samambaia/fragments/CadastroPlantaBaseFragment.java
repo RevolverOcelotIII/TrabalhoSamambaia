@@ -96,7 +96,7 @@ public class CadastroPlantaBaseFragment extends Fragment {
             if (planta.getNome_comum().toLowerCase().contains(busca.toLowerCase()))
                 lista_filtrada.add(planta);
         }
-        if (lista_filtrada.isEmpty()) Toast.makeText(this.getContext(), "Nenhuma planta encontrada...", Toast.LENGTH_SHORT).show();
+        if (lista_filtrada.isEmpty()) Toast.makeText(this.getContext(), R.string.noPlantFound, Toast.LENGTH_SHORT).show();
         else plantaAdapter.filtrarPlantas(lista_filtrada);
 
     }

@@ -40,5 +40,13 @@
     <string name="plantTypicalName">Samambaia</string>
     <string name="buttonMenuManual">Manual</string>
     <string name="buttonMenuIdentify">Identificar</string>
+    <string name="customizeYourPlant">Personalize sua planta!</string>
+    <string name="editYourPlant">Edite sua planta!</string>
+    <string name="selectYourPlant">Selecione qual planta é a sua!</string>
+    <string name="frequentWateringText">Regue esta planta duas vezes esta semana</string>
+    <string name="averageWateringText">Regue esta planta apenas uma vez esta semana</string>
+    <string name="minimumWateringText">Regue esta planta apenas uma vez este mês</string>
+    <string name="noneWateringText">Não regue esta planta</string>
+    <string name="noPlantFound">Nenhuma planta encontrada...</string>
 
 </resources>
