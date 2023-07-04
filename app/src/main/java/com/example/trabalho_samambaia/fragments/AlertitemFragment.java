@@ -85,23 +85,23 @@ public class AlertitemFragment extends Fragment {
                 }
                 recyclerView.setAdapter(adapter);
 
-                adapter.setOnItemTouchListener((view1, event, position) -> {
-                    switch (event.getAction()){
-                        case MotionEvent.ACTION_DOWN:
-                            startX = event.getX();
-                            startY = event.getY();
-
-                        case MotionEvent.ACTION_UP:
-                            float endX = event.getX();
-                            float endY = event.getY();
-                            float deltaX = endX - startX;
-                            float deltaY = endY - startY;
-
-                            if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX < 0) {
-                                view1.setVisibility(View.GONE);
-                            }
-                    }
-                });
+//                adapter.setOnItemTouchListener((view1, event, position) -> {
+//                    switch (event.getAction()){
+//                        case MotionEvent.ACTION_DOWN:
+//                            startX = event.getX();
+//                            startY = event.getY();
+//
+//                        case MotionEvent.ACTION_UP:
+//                            float endX = event.getX();
+//                            float endY = event.getY();
+//                            float deltaX = endX - startX;
+//                            float deltaY = endY - startY;
+//
+//                            if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX < 0) {
+//                                view1.setVisibility(View.GONE);
+//                            }
+//                    }
+//                });
             }
 
 

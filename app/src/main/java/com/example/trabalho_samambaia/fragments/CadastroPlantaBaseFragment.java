@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.trabalho_samambaia.R;
-import com.example.trabalho_samambaia.adapters.PlantaBaseAdapter;
+import com.example.trabalho_samambaia.adapters.PlantaAdapter;
 import com.example.trabalho_samambaia.model.Planta;
 
 import java.util.ArrayList;
@@ -24,7 +24,7 @@ public class CadastroPlantaBaseFragment extends Fragment {
 
     private SearchView busca_planta_searchView;
     private RecyclerView lista_plantas_recycler;
-    private PlantaBaseAdapter plantaBaseAdapter;
+    private PlantaAdapter plantaBaseAdapter;
 
     private List<Planta> lista_plantas;
 
@@ -70,7 +70,7 @@ public class CadastroPlantaBaseFragment extends Fragment {
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this.getContext());
         lista_plantas_recycler.setLayoutManager(layoutManager);
-        plantaBaseAdapter = new PlantaBaseAdapter(lista_plantas);
+        plantaBaseAdapter = new PlantaAdapter(lista_plantas);
         lista_plantas_recycler.setAdapter(plantaBaseAdapter);
         // Inflate the layout for this fragment
         return view;
@@ -83,7 +83,7 @@ public class CadastroPlantaBaseFragment extends Fragment {
                 lista_filtrada.add(planta);
         }
         if (lista_filtrada.isEmpty()) Toast.makeText(this.getContext(), R.string.noPlantFound, Toast.LENGTH_SHORT).show();
-        else plantaAdapter.filtrarPlantas(lista_filtrada);
+        else plantaBaseAdapter.filtrarPlantas(lista_filtrada);
 
     }
 }

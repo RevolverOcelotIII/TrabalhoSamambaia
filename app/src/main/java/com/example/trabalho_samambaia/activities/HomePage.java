@@ -5,6 +5,8 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
@@ -20,10 +22,16 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import com.example.trabalho_samambaia.R;
+import com.example.trabalho_samambaia.dao.PlantaDAO;
+import com.example.trabalho_samambaia.fragments.ListPlantsFragment;
+import com.example.trabalho_samambaia.model.Planta;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import java.util.List;
 
 public class HomePage extends AppCompatActivity {
 
@@ -81,6 +89,25 @@ public class HomePage extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        PlantaDAO plantaDAO = new PlantaDAO(this);
+        List<Planta> plantas = plantaDAO.gettAllPlants();
+        if(plantas.size()>0){
+            try {
+                ListPlantsFragment fragment = new ListPlantsFragment();
+                NavHostFragment navFrag = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_container);
+                NavController navController = navFrag.getNavController();
+                navController.navigate(R.id.listPlantsFragment);
+            }catch (Exception e){
+                Log.d("teste", "onCreateView: " + e.getMessage());
+            }
+        } else Toast.makeText(this, "Sem planta", Toast.LENGTH_SHORT).show();
+    }
+
+
 
     @RequiresApi(api = Build.VERSION_CODES.Q)
     private void showPopupMenu() {

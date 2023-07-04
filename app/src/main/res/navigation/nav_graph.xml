@@ -20,4 +20,8 @@
         android:name="com.example.trabalho_samambaia.fragments.CarouselContainer"
         android:label="fragment_item_list"
         tools:layout="@layout/fragment_carousel_container" />
+    <fragment
+        android:id="@+id/listPlantsFragment"
+        android:name="com.example.trabalho_samambaia.fragments.ListPlantsFragment"
+        android:label="ListPlantsFragment" />
 </navigation>

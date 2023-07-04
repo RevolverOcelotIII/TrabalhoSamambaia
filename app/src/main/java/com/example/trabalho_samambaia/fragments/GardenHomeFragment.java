@@ -138,23 +138,23 @@ public class GardenHomeFragment extends Fragment {
         popupMenu.show();
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        PlantaDAO plantaDAO = new PlantaDAO(getContext());
-        List<Planta> plantas = plantaDAO.getAllPlantas();
-        if(plantas.size()>0){
-            try {
-                ListPlantsFragment fragment = new ListPlantsFragment();
-                FragmentManager fragmentManager = ((AppCompatActivity) getContext()).getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.nav_host_fragment_container, fragment);
-                fragmentTransaction.commit();
-            }catch (Exception e){
-                Log.d("teste", "onCreateView: " + e.getMessage());
-            }
-        } else Toast.makeText(getContext(), "Sem planta", Toast.LENGTH_SHORT).show();
-    }
+//    @Override
+//    public void onResume() {
+//        super.onResume();
+//        PlantaDAO plantaDAO = new PlantaDAO(getContext());
+//        List<Planta> plantas = plantaDAO.gettAllPlants();
+//        if(plantas.size()>0){
+//            try {
+//                ListPlantsFragment fragment = new ListPlantsFragment();
+//                FragmentManager fragmentManager = ((AppCompatActivity) getContext()).getSupportFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.nav_host_fragment_container, fragment);
+//                fragmentTransaction.commit();
+//            }catch (Exception e){
+//                Log.d("teste", "onCreateView: " + e.getMessage());
+//            }
+//        } else Toast.makeText(getContext(), "Sem planta", Toast.LENGTH_SHORT).show();
+//    }
 
     //    private void openAlertItemFragment() {
 //        // Cria uma instância do AlertitemFragment
