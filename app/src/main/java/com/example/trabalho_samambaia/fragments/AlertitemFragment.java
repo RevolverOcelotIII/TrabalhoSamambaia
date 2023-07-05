@@ -71,7 +71,7 @@ public class AlertitemFragment extends Fragment {
         try{
 
             plantaDAO = new PlantaDAO(this.getContext());
-            MyAlertitemRecyclerViewAdapter adapter = new MyAlertitemRecyclerViewAdapter(plantaDAO.gettAllPlants());
+            MyAlertitemRecyclerViewAdapter adapter = new MyAlertitemRecyclerViewAdapter(plantaDAO.getAllPlantas());
 
 
             // Set the adapter

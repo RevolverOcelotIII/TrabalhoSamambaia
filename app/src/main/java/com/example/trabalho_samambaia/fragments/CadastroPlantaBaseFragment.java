@@ -83,7 +83,7 @@ public class CadastroPlantaBaseFragment extends Fragment {
                 lista_filtrada.add(planta);
         }
         if (lista_filtrada.isEmpty()) Toast.makeText(this.getContext(), R.string.noPlantFound, Toast.LENGTH_SHORT).show();
-        else plantaAdapter.filtrarPlantas(lista_filtrada);
+        else plantaBaseAdapter.filtrarPlantas(lista_filtrada);
 
     }
 }
