@@ -45,8 +45,6 @@ public class ConnectionFactory extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        String ddl = "DROP TABLE IF EXISTS Disciplina";
-        sqLiteDatabase.execSQL(ddl);
         onCreate(sqLiteDatabase);
     }
 }

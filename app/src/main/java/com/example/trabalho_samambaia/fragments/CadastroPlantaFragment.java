@@ -175,7 +175,7 @@ public class CadastroPlantaFragment extends Fragment {
 
                         planta_base.setProxima_adubagem(planta_adubagem_editText.getText().toString());
 
-                        plantaDAO.createPlanta(planta_base);
+                        plantaDAO.createPlanta(planta_base, 0);
 /*
                         plantaDAO.createPlanta(planta_base);
                         genericListPlant.add(plantaDAO.getPlantaFromId(planta_base.getId()));
@@ -307,7 +307,7 @@ public class CadastroPlantaFragment extends Fragment {
 
                                 // Atualize o TextView com o nome da cidade
                                 Log.d("teste", "cidade: " + city);
-                                cidadeText.setText(city);
+                                cidadeText.setText("Suas recomendações serão baseadas em: " + city);
                             }
                         })
                         .addOnFailureListener(requireActivity(), e -> {

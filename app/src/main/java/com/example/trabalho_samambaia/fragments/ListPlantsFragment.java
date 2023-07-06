@@ -5,8 +5,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -23,6 +27,8 @@ public class ListPlantsFragment extends Fragment {
     private RecyclerView plantRecyclerView;
     private PlantaListAdapter plantasAdapter;
 
+    List<Planta> plantas;
+
 
     public ListPlantsFragment() {
         // Required empty public constructor
@@ -32,10 +38,18 @@ public class ListPlantsFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         PlantaDAO plantaDAO = new PlantaDAO(getContext());
-        List<Planta> plantas = plantaDAO.gettAllPlants();
+        plantas = plantaDAO.gettAllPlants();
         for (Planta p : plantas) Log.d("teste", "id da planta: "+ p.getId());
 
         plantasAdapter = new PlantaListAdapter(plantaDAO.gettAllPlants());
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        PlantaDAO plantaDAO = new PlantaDAO(getContext());
+        plantasAdapter.atualizarDados(plantaDAO.getAllPlantas());
+        plantasAdapter.notifyDataSetChanged();
     }
 
     @Override

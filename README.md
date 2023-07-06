@@ -9,19 +9,21 @@ Com recursos avançados, o aplicativo permite cadastrar plantas de duas formas: 
 ou automaticamente, utilizando a câmera do dispositivo para identificar a planta.
 
 ## Concepção
-* [Mapa Conceitual](#)
-* [Storyboard](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/assets/storyboard.png?raw=true)
-* [Apresentação em slides](#)
+* [Mapa Conceitual](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/concepcao/mapa.png?raw=true)
+* [Storyboard](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/concepcao/storyboard.png?raw=true)
+* [Apresentação em slides com aplicações correlatas](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/concepcao/apresentacao.pdf?raw=true)
 
 ## Prototipação de telas
-* [Baixa fidelidade](#)
-* [Média fidelidade](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/protótipos/media.png?raw=true)
-* [Alta fidelidade](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/protótipos/alta.png?raw=true)
+* [Baixa fidelidade](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/tree/main/docs/prototipos/baixa)
+* [Média fidelidade](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/prototipos/media.png?raw=true)
+* [Alta fidelidade](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/prototipos/alta.png?raw=true)
 
-## Links
-* [Diagrama da atividade](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/diagramas/Diagrama_atividade_samambaia.jpg?raw=true)
-* [Diagrama de casos de uso](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/diagramas/Diagrama_caso_uso_enumerado.jpeg?raw=true)
-* [Documento de requisitos](#)
+## Planejamento
+* [Diagrama da atividade](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/planejamento/Diagrama_atividade_samambaia.jpg?raw=true)
+* [Diagrama de casos de uso](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/planejamento/Diagrama_caso_uso_enumerado.jpeg?raw=true)
+* [Documento de requisitos](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/planejamento/requisitos.pdf?raw=true)
+
+## Outros
 * [Vídeo de Apresentação](#)
 * [APK](#)
 
