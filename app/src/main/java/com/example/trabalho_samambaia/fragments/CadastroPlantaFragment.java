@@ -35,6 +35,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.trabalho_samambaia.R;
+import com.example.trabalho_samambaia.activities.HomePage;
 import com.example.trabalho_samambaia.adapters.PlantaListAdapter;
 import com.example.trabalho_samambaia.dao.PlantaDAO;
 import com.example.trabalho_samambaia.model.Planta;
@@ -49,6 +50,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.Random;
 
@@ -114,10 +116,13 @@ public class CadastroPlantaFragment extends Fragment {
             Bundle args = getArguments();
             if (args.getParcelable("foto_bitmap") != null) {
                 planta_base = Planta.getRandomPlanta(this.getContext());
-            } else if (args.getInt("planta_id") >= 0) {
+            } else if (args.getInt("planta_id") > 0) {
+                Log.d("teste", "fragment: "+args.getInt("planta_id"));
                 planta_base = Planta.getPlanta(args.getInt("planta_id"), this.getContext());
-            } else
-                planta_base = Planta.getPlanta(args.getInt("planta_id"), this.getContext());
+            } else {
+                PlantaDAO plantaDAO = new PlantaDAO(getContext());
+                planta_base = plantaDAO.getPlantaFromId(args.getInt("plantaedit_id"));
+            }
 
             planta_nomeText = view.findViewById(R.id.sua_planta);
             planta_nomeText.setText(planta_base.getNome_comum());
@@ -143,18 +148,29 @@ public class CadastroPlantaFragment extends Fragment {
                     public void onClick(View view) {
                         PlantaDAO plantaDAO = new PlantaDAO(getContext());
                         planta_base.setNome_personalizado(planta_nome_editText.getText().toString());
-                        if (planta_base.getImagem_url()=="") {
+                        if(planta_base.getImagem_url().equals("")) {
+                            planta_imageView.setDrawingCacheEnabled(true);
+
+                            Bitmap bitmap = Bitmap.createBitmap(planta_imageView.getDrawingCache());
+                            Random random = new Random();
+                            planta_base.setImagem_url(createImageFromBitmap(getContext(), bitmap, "" + random.nextInt()));
+
+                            planta_imageView.setDrawingCacheEnabled(false);
+                        }
+                        /*
+                        if (Objects.equals(planta_base.getImagem_url(), "")) {
                             Bitmap bitmap = (Bitmap) args.getParcelable("foto_bitmap");
                             Random random = new Random();
                             planta_base.setImagem_url(createImageFromBitmap(getContext(), bitmap, "" + random.nextInt()));
-                        }
+                        }*/
                         //int proxima_adubagem = (Integer) planta_adubagem_editText.getText().toString().substring(0,2);
 
                         planta_base.setProxima_adubagem(planta_adubagem_editText.getText().toString());
 
                         plantaDAO.editPlanta(planta_base);
 
-                        getActivity().finish();
+                        Intent intent = new Intent(getActivity(), HomePage.class);
+                        startActivity(intent);
 
                     }
                 });
@@ -166,10 +182,19 @@ public class CadastroPlantaFragment extends Fragment {
                     public void onClick(View view) {
                         PlantaDAO plantaDAO = new PlantaDAO(getContext());
                         planta_base.setNome_personalizado(planta_nome_editText.getText().toString());
+
                         if (args.getParcelable("foto_bitmap") != null) {
                             Bitmap bitmap = (Bitmap) args.getParcelable("foto_bitmap");
                             Random random = new Random();
                             planta_base.setImagem_url(createImageFromBitmap(getContext(), bitmap, "" + random.nextInt()));
+                        }else if(planta_base.getImagem_url().equals("")){
+                            planta_imageView.setDrawingCacheEnabled(true);
+
+                            Bitmap bitmap = Bitmap.createBitmap(planta_imageView.getDrawingCache());
+                            Random random = new Random();
+                            planta_base.setImagem_url(createImageFromBitmap(getContext(), bitmap, "" + random.nextInt()));
+
+                            planta_imageView.setDrawingCacheEnabled(false);
                         }
                         //int proxima_adubagem = (Integer) planta_adubagem_editText.getText().toString().substring(0,2);
 

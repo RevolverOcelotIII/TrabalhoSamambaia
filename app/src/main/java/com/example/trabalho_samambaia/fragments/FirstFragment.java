@@ -51,7 +51,7 @@ public class FirstFragment extends Fragment {
         TabLayout tabLayout = view.findViewById(R.id.plant_view_tab);
         viewPager = view.findViewById(R.id.plant_view_page);
         viewPager.setAdapter(plantViewAdapter);
-        new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> tab.setText("Cuidados")).attach();
+        new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> tab.setText("Detalhes da Planta")).attach();
     }
 
 
@@ -106,6 +106,12 @@ public class FirstFragment extends Fragment {
                     .setText(getSunlightGuide(PlantaListAdapter.getPlantPosition().getBanho_sol()));
             ((TextView) view.findViewById(R.id.textFertilize))
                     .setText(PlantaListAdapter.getPlantPosition().getProxima_adubagem());
+            ((TextView) view.findViewById(R.id.cicletext))
+                    .setText("Ciclo: "+ PlantaListAdapter.getPlantPosition().getCiclo());
+            ((TextView) view.findViewById(R.id.scentificnametext))
+                    .setText("Nome científico: "+ PlantaListAdapter.getPlantPosition().getNome_cientifico());
+            ((TextView) view.findViewById(R.id.suntext))
+                    .setText("Luz: "+ PlantaListAdapter.getPlantPosition().getBanho_sol());
         }
 
         private String getWateringGuide(String watering){

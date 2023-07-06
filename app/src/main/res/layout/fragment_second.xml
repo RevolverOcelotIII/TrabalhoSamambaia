@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".fragments.SecondFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,13 +12,62 @@
         android:padding="16dp">
 
         <TextView
+            android:id="@+id/infotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informações Básicas"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cicletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciclo: "
+            app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/infotext" />
+
+        <TextView
+            android:id="@+id/scentificnametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome científico: "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cicletext" />
+
+        <TextView
+            android:id="@+id/suntext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luz suportada: "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scentificnametext" />
+
+        <TextView
+            android:id="@+id/adubotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adubagem: 2 vezes na semana"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/suntext" />
+
+        <TextView
+            android:id="@+id/caretext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuidados"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adubotext" />
+
+        <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:text="Regagem"
-            app:layout_constraintStart_toStartOf="@+id/linearLayout2"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/caretext" />
 
         <LinearLayout
             android:id="@+id/linearLayout2"

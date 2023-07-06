@@ -94,7 +94,7 @@ public class HomePage extends AppCompatActivity {
     public void onResume() {
         super.onResume();
         PlantaDAO plantaDAO = new PlantaDAO(this);
-        List<Planta> plantas = plantaDAO.gettAllPlants();
+        List<Planta> plantas = plantaDAO.getAllPlantas();
         if(plantas.size()>0){
             try {
                 ListPlantsFragment fragment = new ListPlantsFragment();

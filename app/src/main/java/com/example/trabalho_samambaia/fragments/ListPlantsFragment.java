@@ -38,10 +38,10 @@ public class ListPlantsFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         PlantaDAO plantaDAO = new PlantaDAO(getContext());
-        plantas = plantaDAO.gettAllPlants();
+        plantas = plantaDAO.getAllPlantas();
         for (Planta p : plantas) Log.d("teste", "id da planta: "+ p.getId());
 
-        plantasAdapter = new PlantaListAdapter(plantaDAO.gettAllPlants());
+        plantasAdapter = new PlantaListAdapter(plantaDAO.getAllPlantas());
     }
 
     @Override

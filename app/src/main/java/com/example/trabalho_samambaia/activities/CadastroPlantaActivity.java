@@ -50,9 +50,10 @@ public class CadastroPlantaActivity extends AppCompatActivity {
 
         } else if (intent.getIntExtra("plantaedit_id", -1) != -1) {
             getSupportActionBar().setTitle(R.string.editYourPlant);
+            Log.d("teste", "onCreate: "+intent.getIntExtra("plantaedit_id", -1));
             Bundle args = new Bundle();
             args.putInt("plantaedit_id",intent.getIntExtra("plantaedit_id", -1));
-            CadastroPlantaBaseFragment plantaBaseFragment = new CadastroPlantaBaseFragment();
+            CadastroPlantaFragment plantaBaseFragment = new CadastroPlantaFragment();
             plantaBaseFragment.setArguments(args);
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             transaction.replace(R.id.cadastro_planta_fragment, plantaBaseFragment);

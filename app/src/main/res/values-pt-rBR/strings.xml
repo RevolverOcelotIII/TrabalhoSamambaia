@@ -25,7 +25,7 @@
     <string name="yourPlantType">Samambaia (Samambaia)</string>
     <string name="plantOptionalName">nome (opcional)</string>
     <string name="plantLastFertilization">Última adubagem (opcional)</string>
-    <string name="plantCityLocation">Salvador</string>
+    <string name="plantCityLocation">"Suas recomendações serão baseadas em: ..."</string>
     <string name="plantCreationButton">Cadastrar Planta</string>
     <string name="searchPlant">Buscar planta:</string>
     <string name="searchingPlantQueryHint">Pesquisar...</string>
