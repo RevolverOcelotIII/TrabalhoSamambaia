@@ -24,8 +24,8 @@ ou automaticamente, utilizando a câmera do dispositivo para identificar a plant
 * [Documento de requisitos](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/blob/main/docs/planejamento/requisitos.pdf?raw=true)
 
 ## Outros
-* [Vídeo de Apresentação](#)
-* [APK](#)
+* [Vídeo de Apresentação](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/tree/main/videos)
+* [APK](https://github.com/RevolverOcelotIII/TrabalhoSamambaia/tree/main/apk)
 
 ## Autores
 * Daniel Bahiense
