@@ -1,5 +1,6 @@
 package com.example.trabalho_samambaia.adapters;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.trabalho_samambaia.R;
+import com.example.trabalho_samambaia.activities.PlantViewer;
 import com.example.trabalho_samambaia.model.Planta;
 
 import java.util.List;
@@ -16,6 +18,7 @@ import java.util.List;
 public class PlantaListAdapter extends RecyclerView.Adapter<PlantaListAdapter.PlantaViewHolder> {
 
     private List<Planta> plantasList;
+    private static Planta plantPosition;
 
     public PlantaListAdapter(List<Planta> plantasList) {
         this.plantasList = plantasList;
@@ -30,8 +33,13 @@ public class PlantaListAdapter extends RecyclerView.Adapter<PlantaListAdapter.Pl
 
     @Override
     public void onBindViewHolder(@NonNull PlantaViewHolder holder, int position) {
-        Planta planta = plantasList.get(position);
-        holder.bind(planta);
+        plantPosition = plantasList.get(position);
+        holder.bind(plantPosition);
+        holder.itemView.setOnClickListener(view -> {
+            Intent intent = new Intent(view.getContext(), PlantViewer.class);
+
+            view.getContext().startActivity(intent);
+        });
     }
 
     @Override
@@ -59,5 +67,9 @@ public class PlantaListAdapter extends RecyclerView.Adapter<PlantaListAdapter.Pl
             nomePlantaTextView.setText(planta.getNome_personalizado());
             proximaRegaemTextView.setText(planta.getRegagem());
         }
+    }
+
+    public static Planta getPlantPosition(){
+        return plantPosition;
     }
 }
